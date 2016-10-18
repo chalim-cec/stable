@@ -1,0 +1,49 @@
+.centered{
+    text-align: center;
+}
+
+#game-container{
+	display:inline-block;
+}
+
+#menu-container{
+	height: 500px;
+	width: 200px;
+	background-color: #e0e0e0;
+	float: right;
+	display:inline-block;
+}
+
+#office-container{
+	height: 500px;
+	width: 500px;
+	background-color: #eeeeee;
+	float: right;
+	display:inline-block;
+}
+
+#menu-container2{
+	height: 500px;
+	background-color: #e0e0e0;
+}
+
+#office-container2{
+	height: 500px;
+	background-color: #eeeeee;
+}
+
+#blue-square{
+  width: 30px;
+  height: 30px;
+  background-color: #29e;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+#red-rect{
+  width: 60px;
+  height: 30px;
+  background-color: #f33;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
