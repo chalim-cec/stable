@@ -1,9 +1,3 @@
-@media all and (orientation:portrait) {
-  #office-container{
-	background-color: #ff0000;
-}
-}
-
 .centered{
     text-align: center;
 }
@@ -15,10 +9,18 @@
 
 #office-container{
 	height: 500px;
-	background-color: #eeeeee;
+	background-color: #cccccc;
 	display:inline-block;
 	float: right;
 }
+
+/*
+@media (orientation: portrait) {
+	#office-container{
+		
+	}
+}
+*/
 
 #menu-container{
 	height: 500px;
@@ -26,7 +28,6 @@
 	display:inline-block;
 	float: right;
 }
-
 
 /*
 

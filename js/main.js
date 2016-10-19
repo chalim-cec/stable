@@ -28,6 +28,28 @@ function gameSize() {
 }
 */
 
+$(document).ready(function() {
+  gameSize();
+});
+
+$( window ).resize(function() {
+  gameSize();
+});
+
+function gameSize() {
+  if (matchMedia('all and (orientation:portrait)').matches){
+    $("#office-container").addClass("col-xs-12");
+    $("#office-container").removeClass("col-xs-10");
+    $("#menu-container").addClass("col-xs-12");
+    $("#menu-container").removeClass("col-xs-2");
+  } else { 
+    $("#office-container").removeClass("col-xs-12");
+    $("#office-container").addClass("col-xs-10");
+    $("#menu-container").removeClass("col-xs-12");
+    $("#menu-container").addClass("col-xs-2");
+  }
+}
+
 // target elements with the "draggable" class
 interact('.draggable')
   .draggable({
