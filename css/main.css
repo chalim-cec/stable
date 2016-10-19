@@ -32,17 +32,17 @@
 @media screen and (max-height: 700px) {
 
 	#game-container{
-		height: 85vh;
-		width: 85vw;
+		height: 90vh;
+		width: 90vw;
 	}
 
 
 	#office-container{
-		height: 85vh;
+		height: 90vh;
 	}
 
 	#menu-container{
-		height: 85vh;
+		height: 90vh;
 	}
 
 }
