@@ -3,20 +3,22 @@
 }
 
 #game-container{
-	width: 500px;
+	width: 800px;
 	display:inline-block;
 }
 
 #office-container{
-	height: 400px;
+	height: 500px;
 	background-color: #eeeeee;
 	display:inline-block;
+	float: right;
 }
 
 #menu-container{
-	height: 100px;
+	height: 500px;
 	background-color: #e0e0e0;
 	display:inline-block;
+	float: right;
 }
 
 
