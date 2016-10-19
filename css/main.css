@@ -4,6 +4,7 @@
 
 #game-container{
 	width: 800px;
+	height: 500px;
 	display:inline-block;
 }
 
@@ -21,10 +22,29 @@
 	float: right;
 }
 
+
 @media (orientation: portrait) {
 	#menu-container{
 		height: 200px;
 	}
+}
+
+@media screen and (max-height: 700px) {
+
+	#game-container{
+		height: 85vh;
+		width: 85vw;
+	}
+
+
+	#office-container{
+		height: 85vh;
+	}
+
+	#menu-container{
+		height: 85vh;
+	}
+
 }
 
 /*
