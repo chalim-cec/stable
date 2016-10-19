@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
   gameSize();
 });
 
@@ -26,6 +26,7 @@ function gameSize() {
     $("#game-container").css({"display": "inline-block"}); 
   }
 }
+*/
 
 // target elements with the "draggable" class
 interact('.draggable')

@@ -3,6 +3,30 @@
 }
 
 #game-container{
+	width: 500px;
+	display:inline-block;
+}
+
+#office-container{
+	height: 400px;
+	background-color: #eeeeee;
+	display:inline-block;
+}
+
+#menu-container{
+	height: 100px;
+	background-color: #e0e0e0;
+	display:inline-block;
+}
+
+
+/*
+
+.centered{
+    text-align: center;
+}
+
+#game-container{
 	display:inline-block;
 }
 
