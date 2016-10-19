@@ -29,7 +29,7 @@
 	}
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-device-height: 700px) {
 
 	#game-container{
 		height: 90vh;
