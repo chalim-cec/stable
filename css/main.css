@@ -14,19 +14,17 @@
 	float: right;
 }
 
-/*
-@media (orientation: portrait) {
-	#office-container{
-		
-	}
-}
-*/
-
 #menu-container{
 	height: 500px;
 	background-color: #e0e0e0;
 	display:inline-block;
 	float: right;
+}
+
+@media (orientation: portrait) {
+	#menu-container{
+		height: 200px;
+	}
 }
 
 /*
