@@ -32,17 +32,17 @@
 @media screen and (orientation: landscape) and (max-device-width: 700px) {
 
 	#game-container{
-		height: 85vh;
-		width: 85vw;
+		height: 95vh;
+		width: 90vw;
 	}
 
 
 	#office-container{
-		height: 85vh;
+		height: 95vh;
 	}
 
 	#menu-container{
-		height: 85vh;
+		height: 95vh;
 	}
 
 }
