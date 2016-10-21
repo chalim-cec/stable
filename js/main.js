@@ -31,6 +31,7 @@ interact('.draggable')
       endOnly: true,
       elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
     },
+    /*
     snap: {
       targets: [
         interact.createSnapGrid({ x: 30, y: 30 })
@@ -38,6 +39,7 @@ interact('.draggable')
       range: Infinity,
       relativePoints: [ { x: 0, y: 0 } ]
     },
+    */
     // enable autoScroll
     autoScroll: true,
 

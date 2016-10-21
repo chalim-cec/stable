@@ -30,7 +30,7 @@
 #office-container{
 	display:inline-block;
     margin: 0 auto;
-	background-image: url('../img/officeFloor.png');
+	background-image: url('../img/office_blank.svg');
 	width: 600px;
 	height: 460px;
 
@@ -65,12 +65,12 @@
 
 }
 
-#blue-square{
-  width: 30px;
-  height: 30px;
-  background-color: #29e;
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
+#couch_blue_2{
+  background-image: url('../img/couch_blue2_0.svg');
+}
+
+#cubicle{
+	  background-image: url('../img/cubicle_0.svg');
 }
 
 #red-rect{
@@ -79,4 +79,11 @@
   background-color: #f33;
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
+}
+
+.game-object{
+	width: 100px;
+	height: 100px;
+	-webkit-transform: translate(0px, 0px);
+	      transform: translate(0px, 0px);
 }
