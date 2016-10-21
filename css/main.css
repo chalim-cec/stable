@@ -20,7 +20,9 @@
 	background-color: #cccccc;
 	display:inline-block;
 	float: right;
-	text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -28,8 +30,8 @@
 	display:inline-block;
     margin: 0 auto;
 	background-image: url('../img/officeFloor.png');
-	width: 440px;
-	height: 340px;
+	width: 600px;
+	height: 460px;
 
 }
 
