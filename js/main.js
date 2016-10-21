@@ -9,13 +9,14 @@ $( window ).resize(function() {
 
 function gameSize() {
   if (matchMedia('all and (orientation:portrait)').matches){
-    $("#office-container").addClass("col-xs-12");
-    $("#menu-container").addClass("col-xs-12");
-    $("#office-container").removeClass("col-xs-10");
+    console.log("test");
+    $("#playarea-container").removeClass("col-xs-10");
+    $("#playarea-container").addClass("col-xs-12");
     $("#menu-container").removeClass("col-xs-2");
+    $("#menu-container").addClass("col-xs-12");
   } else { 
-    $("#office-container").addClass("col-xs-10");
-    $("#office-container").removeClass("col-xs-12");
+    $("#playarea-container").addClass("col-xs-10");
+    $("#playarea-container").removeClass("col-xs-12");
     $("#menu-container").addClass("col-xs-2");
     $("#menu-container").removeClass("col-xs-12");
   }
