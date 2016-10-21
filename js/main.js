@@ -1,32 +1,3 @@
-/*$(document).ready(function() {
-  gameSize();
-});
-
-$( window ).resize(function() {
-  gameSize();
-});
-
-function gameSize() {
-  console.log("whaddup");
-  var mql = window.matchMedia("(max-width: 710px)");
-
-  if (mql.matches) {
-    console.log("yes");
-    $("#office-container").addClass("col-sm-10");
-    $("#office-container").css({"float": "none", "display": "block", "width": "auto"});
-    $("#menu-container").addClass("col-sm-10");
-    $("#menu-container").css({"float": "none", "display": "block", "width": "auto"});
-    $("#game-container").css({"display": "block"});
-  } else {
-    console.log("no");
-    $("#menu-container").removeClass("col-sm-10");
-    $("#menu-container").css({"float": "right", "width": "200"});
-    $("#office-container").removeClass("col-sm-10");
-    $("#office-container").css({"float": "right", "width": "500"}); 
-    $("#game-container").css({"display": "inline-block"}); 
-  }
-}
-*/
 
 $(document).ready(function() {
   gameSize();

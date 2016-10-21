@@ -8,18 +8,29 @@
 	display:inline-block;
 }
 
-#office-container{
-	height: 500px;
-	background-color: #cccccc;
-	display:inline-block;
-	float: right;
-}
-
 #menu-container{
 	height: 500px;
 	background-color: #e0e0e0;
 	display:inline-block;
 	float: right;
+}
+
+#playarea-container{
+	height: 500px;
+	background-color: #cccccc;
+	display:inline-block;
+	float: right;
+	text-align: center;
+}
+
+
+#office-container{
+	display:inline-block;
+    margin: 0 auto;
+	background-image: url('../img/officeFloor.png');
+	width: 440px;
+	height: 340px;
+
 }
 
 
@@ -41,7 +52,7 @@
 	}
 
 
-	#office-container{
+	#playarea-container{
 		height: 95vh;
 	}
 
@@ -50,40 +61,6 @@
 	}
 
 }
-
-/*
-
-.centered{
-    text-align: center;
-}
-
-#game-container{
-	display:inline-block;
-}
-
-#menu-container{
-	height: 500px;
-	background-color: #e0e0e0;
-	display:inline-block;
-}
-
-#office-container{
-	height: 500px;
-	background-color: #eeeeee;
-	display:inline-block;
-}
-
-/*
-#menu-container2{
-	height: 500px;
-	background-color: #e0e0e0;
-}
-
-#office-container2{
-	height: 500px;
-	background-color: #eeeeee;
-}
-*/
 
 #blue-square{
   width: 30px;
