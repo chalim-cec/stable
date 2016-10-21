@@ -33,7 +33,7 @@
 	background-image: url('../img/office_blank.svg');
 	width: 600px;
 	height: 460px;
-
+	position: relative;
 }
 
 
@@ -81,9 +81,23 @@
           transform: translate(0px, 0px);
 }
 
+#game-objects{
+	min-height: 420px;
+}
+
 .game-object{
 	width: 100px;
 	height: 100px;
 	-webkit-transform: translate(0px, 0px);
 	      transform: translate(0px, 0px);
+}
+
+.delete-row{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#delete-button{
+	z-index: -2;
 }

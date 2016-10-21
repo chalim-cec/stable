@@ -29,17 +29,35 @@
         </p>
 
         <div class="centered">
-            <div id="game-container">
-            
+            <div id="game-container" class="row">
+
                 <div id="playarea-container" class="col-xs-10">
                     <div id="office-container">
-                        <div id="couch_blue_2" class="draggable game-object"></div>
-                        <div id="cubicle" class="draggable game-object"></div>
+                        <div class="row">
+                            <button type="button" id="restart-button" class="btn btn-default col-xs-2">Restart</button>
+                        </div>
+                        <div class="row">
+                            <button type="button" id="save-button" class="btn btn-default col-xs-2">Save</button>
+                        </div>
+
+
+                        <div class="delete-row row">
+                            <button type="button" id="delete-button" class="btn btn-default">Trash</button>
+                        </div>
+
+
+                        <div id="game-objects">
+                            <div id="couch_blue_2" class="draggable game-object"></div>
+                            <div id="cubicle" class="draggable game-object"></div>
+                        </div>
+                        
                     </div>
                 </div>
+
                 <div id="menu-container" class="col-xs-2">
-                test
+                    Menu here
                 </div>
+
             </div>
         </div>
 
