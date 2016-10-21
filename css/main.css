@@ -5,6 +5,7 @@
 #game-container{
 	width: 800px;
 	height: 500px;
+	min-height: 352px;
 	display:inline-block;
 }
 
