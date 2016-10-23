@@ -11,24 +11,16 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1478,
+				"buffer_size": 4071,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "CEC_Melb_Prospectus.sublime-project",
-			"settings":
-			{
-				"buffer_size": 45,
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 1348,
+				"buffer_size": 1868,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -37,7 +29,7 @@
 			"file": "css/main.css",
 			"settings":
 			{
-				"buffer_size": 760,
+				"buffer_size": 1455,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -99,6 +91,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"z-index",
+			"min-h",
+			"office-container",
+			"office",
+			"office-container",
 			"grid-snap"
 		],
 		"highlight": true,
@@ -107,6 +104,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"playarea-container"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -126,15 +124,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1478,
+						"buffer_size": 4071,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1457,
-								1457
+								2958,
+								2958
 							]
 						],
 						"settings":
@@ -144,7 +142,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 453.0,
+						"translation.y": 739.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -152,47 +150,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "CEC_Melb_Prospectus.sublime-project",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 45,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "js/main.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1348,
+						"buffer_size": 1868,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1091,
-								1091
+								638,
+								638
 							]
 						],
 						"settings":
@@ -202,27 +172,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1178.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "css/main.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 760,
+						"buffer_size": 1455,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								334,
-								334
+								1452,
+								1452
 							]
 						],
 						"settings":
@@ -230,10 +200,10 @@
 							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 406.0,
+						"translation.y": 1925.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -278,7 +248,7 @@
 	"project": "CEC_Melb_Prospectus.sublime-project",
 	"replace":
 	{
-		"height": 58.0
+		"height": 94.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -316,7 +286,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 225.0,
+	"side_bar_width": 312.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
