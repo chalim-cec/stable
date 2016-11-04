@@ -56,12 +56,13 @@
 	#game-container{
 		height: 95vh;
 		width: 90vw;
-		min-height: 480px;
+		min-height: 460px;
 	}
 
 
 	#playarea-container{
 		height: 95vh;
+		min-height: 460px;
 	}
 
 	#menu-container{
