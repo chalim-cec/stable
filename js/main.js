@@ -11,7 +11,7 @@ $(document).ready(function() {
   //saves play area
   $("#save-btn").click(function() { 
       console.log("test");
-      html2canvas($("#office-container"), {
+      html2canvas($("#playarea-container"), {
           onrendered: function(canvas) {
               canvas.toBlob(function(blob) {
                 saveAs(blob, "office-screenshot."); 
@@ -20,7 +20,7 @@ $(document).ready(function() {
       });
   });
 
-  
+
 });
 
 $( window ).resize(function() {
