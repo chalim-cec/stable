@@ -1,6 +1,26 @@
 
 $(document).ready(function() {
   gameSize();
+
+
+  $("#restart-btn").click(function() { 
+      console.log("HELLO");
+  });
+
+
+  //saves play area
+  $("#save-btn").click(function() { 
+      console.log("test");
+      html2canvas($("#office-container"), {
+          onrendered: function(canvas) {
+              canvas.toBlob(function(blob) {
+                saveAs(blob, "office-screenshot."); 
+              });
+          }
+      });
+  });
+
+  
 });
 
 $( window ).resize(function() {
