@@ -2,11 +2,9 @@
 $(document).ready(function() {
   gameSize();
 
+});
 
-  $("#restart-btn").click(function() { 
-      console.log("HELLO");
-  });
-
+$(window).on("load", function() {
 
   //saves play area
   $("#save-btn").click(function() { 
