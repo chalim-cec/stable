@@ -33,7 +33,6 @@
 	background-image: url('../img/office_blank.svg');
 	width: 600px;
 	height: 460px;
-	/*position: absolute;*/
 }
 
 #office-top-padding{
@@ -67,6 +66,7 @@
 
 	#menu-container{
 		height: 95vh;
+		min-height: 460px;
 	}
 
 }
