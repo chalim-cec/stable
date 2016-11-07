@@ -33,7 +33,7 @@
 	background-image: url('../img/office_blank.svg');
 	width: 600px;
 	height: 460px;
-	position: absolute;
+	/*position: absolute;*/
 }
 
 #office-top-padding{
