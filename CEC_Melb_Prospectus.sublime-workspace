@@ -11,7 +11,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 4071,
+				"buffer_size": 3765,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -20,7 +20,7 @@
 			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 1868,
+				"buffer_size": 2264,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -29,7 +29,7 @@
 			"file": "css/main.css",
 			"settings":
 			{
-				"buffer_size": 1455,
+				"buffer_size": 1537,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -69,11 +69,11 @@
 	[
 		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus",
 		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/css",
-		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/js",
-		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/js/vendor"
+		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/js"
 	],
 	"file_history":
 	[
+		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/js/main.js"
 	],
 	"find":
 	{
@@ -115,7 +115,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -124,15 +124,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4071,
+						"buffer_size": 3765,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2958,
-								2958
+								968,
+								968
 							]
 						],
 						"settings":
@@ -142,10 +142,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 739.0,
+						"translation.y": 323.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -154,15 +154,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1868,
+						"buffer_size": 2264,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								638,
-								638
+								143,
+								143
 							]
 						],
 						"settings":
@@ -172,10 +172,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1178.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -184,15 +184,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1455,
+						"buffer_size": 1537,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1452,
-								1452
+								336,
+								336
 							]
 						],
 						"settings":
@@ -200,7 +200,7 @@
 							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1925.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -211,7 +211,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 31.0
+		"height": 37.0
 	},
 	"input":
 	{
@@ -248,7 +248,7 @@
 	"project": "CEC_Melb_Prospectus.sublime-project",
 	"replace":
 	{
-		"height": 94.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
