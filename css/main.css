@@ -30,7 +30,7 @@
 #office-container{
 	display:inline-block;
     margin: 0 auto;
-	background-image: url('../img/office_blank.svg');
+	background-image: url('../img/office_blank.png');
 	width: 600px;
 	height: 460px;
 }
