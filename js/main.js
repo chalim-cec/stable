@@ -6,9 +6,35 @@ $(document).ready(function() {
 
 $(window).on("load", function() {
 
+  $("#save-btn").click(function() { 
+
+    var scaleBy = 5;
+    var w = 1000;
+    var h = 1000;
+    var div = document.querySelector('#playarea-container');
+    var canvas = document.createElement('canvas');
+    canvas.width = w * scaleBy;
+    canvas.height = h * scaleBy;
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
+    var context = canvas.getContext('2d');
+    context.scale(scaleBy, scaleBy);
+
+    html2canvas(div, {
+        canvas:canvas,
+        onrendered: function (canvas) {
+          canvas.toBlob(function(blob) {
+            saveAs(blob, "office-screenshot."); 
+          });
+        }
+    });
+    
+  });
+
+/*
   //saves play area
   $("#save-btn").click(function() { 
-      html2canvas($("#playarea-container"), {
+      html2canvas($("#text"), {
           onrendered: function(canvas) {
               canvas.toBlob(function(blob) {
                 saveAs(blob, "office-screenshot."); 
@@ -16,7 +42,8 @@ $(window).on("load", function() {
           }
       });
   });
-  
+*/
+
   //deletes all items
   $("#restart-btn").click(function() { 
     $(".game-object").remove();
