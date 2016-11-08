@@ -16,7 +16,11 @@ $(window).on("load", function() {
           }
       });
   });
-
+  
+  //deletes all items
+  $("#restart-btn").click(function() { 
+    $(".game-object").remove();
+  });
 
 });
 
