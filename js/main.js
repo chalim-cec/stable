@@ -73,9 +73,10 @@ function dragMoveListener (event) {
   target.setAttribute('data-x', x);
   target.setAttribute('data-y', y);
 
-  $(target).mouseup(function() {
+  $(target).on('touchend mouseup', function(e){
     if($(target).overlaps('#delete-btn').length){
       $(target).remove();
     }
   });
+
 }
