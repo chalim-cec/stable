@@ -8,7 +8,6 @@ $(window).on("load", function() {
 
   //saves play area
   $("#save-btn").click(function() { 
-      console.log("test");
       html2canvas($("#playarea-container"), {
           onrendered: function(canvas) {
               canvas.toBlob(function(blob) {
@@ -17,7 +16,11 @@ $(window).on("load", function() {
           }
       });
   });
-
+  
+  //deletes all items
+  $("#restart-btn").click(function() { 
+    $(".game-object").remove();
+  });
 
 });
 
@@ -49,16 +52,6 @@ interact('.draggable')
       endOnly: true,
       elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
     },
-    /*
-    snap: {
-      targets: [
-        interact.createSnapGrid({ x: 30, y: 30 })
-      ],
-      range: Infinity,
-      relativePoints: [ { x: 0, y: 0 } ]
-    },
-    */
-    // enable autoScroll
     autoScroll: true,
 
     // call this function on every dragmove event
@@ -83,4 +76,11 @@ function dragMoveListener (event) {
   // update the posiion attributes
   target.setAttribute('data-x', x);
   target.setAttribute('data-y', y);
+
+  $(target).on('touchend mouseup', function(e){
+    if($(target).overlaps('#delete-btn').length){
+      $(target).remove();
+    }
+  });
+
 }
