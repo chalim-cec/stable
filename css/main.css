@@ -30,10 +30,13 @@
 #office-container{
 	display:inline-block;
     margin: 0 auto;
-	background-image: url('../img/office_blank.svg');
+	background-image: url('../img/office_blank.png');
 	width: 600px;
 	height: 460px;
+}
 
+#office-top-padding{
+	min-height: 20px;
 }
 
 
@@ -52,22 +55,22 @@
 	#game-container{
 		height: 95vh;
 		width: 90vw;
+		min-height: 460px;
 	}
 
 
 	#playarea-container{
 		height: 95vh;
+		min-height: 460px;
 	}
 
 	#menu-container{
 		height: 95vh;
+		min-height: 460px;
 	}
 
 }
 
-#couch_blue_2{
-  background-image: url('../img/couch_blue2_0.svg');
-}
 
 #cubicle{
 	  background-image: url('../img/cubicle_0.svg');
@@ -81,9 +84,22 @@
           transform: translate(0px, 0px);
 }
 
+#game-objects{
+	min-height: 420px;
+}
+
 .game-object{
 	width: 100px;
 	height: 100px;
 	-webkit-transform: translate(0px, 0px);
 	      transform: translate(0px, 0px);
+}
+
+.delete-row{
+	position: absolute;
+	bottom: 20px;
+}
+
+#delete-btn{
+	z-index: -2;
 }

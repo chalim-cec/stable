@@ -11,34 +11,60 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/interact.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="js/vendor/html2canvas.js"></script>
+        <script src="js/vendor/FileSaver.min.js"></script>
+
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
     </head>
     <body>
-
+    <div id="everything">
         <h1>
             PAGE TITLE
         </h1>
 
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In leo orci, tincidunt eu eros eleifend, eleifend mattis leo. Sed bibendum mi quis eros fermentum, at dictum dolor consectetur. Fusce faucibus imperdiet purus. Quisque eget tortor euismod, finibus est quis, commodo sem. Sed lobortis convallis justo, ac scelerisque nisi tincidunt ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <p>
-            Sed viverra quam vel semper hendrerit. Fusce ac aliquam libero. Mauris commodo nisl non ipsum efficitur euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi pharetra tortor mi. In vel egestas lacus. In ac ullamcorper diam. Suspendisse posuere justo eu arcu volutpat efficitur. Morbi libero turpis, rutrum ut ex lobortis, vulputate dignissim dui. Pellentesque ac quam tincidunt, bibendum augue vitae, volutpat ante. Fusce ex turpis, accumsan non odio at, ultricies malesuada dui. Vivamus a arcu sit amet diam blandit cursus nec sed nulla. Aenean neque diam, pulvinar dapibus urna eu, placerat dignissim risus. Morbi egestas mi non pellentesque dapibus. Sed ante nisi, bibendum vitae massa a, mattis rutrum lorem. In id ligula id erat suscipit porta.
-        </p>
+        <div id="text">
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In leo orci, tincidunt eu eros eleifend, eleifend mattis leo. Sed bibendum mi quis eros fermentum, at dictum dolor consectetur. Fusce faucibus imperdiet purus. Quisque eget tortor euismod, finibus est quis, commodo sem. Sed lobortis convallis justo, ac scelerisque nisi tincidunt ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <p>
+                Sed viverra quam vel semper hendrerit. Fusce ac aliquam libero. Mauris commodo nisl non ipsum efficitur euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi pharetra tortor mi. In vel egestas lacus. In ac ullamcorper diam. Suspendisse posuere justo eu arcu volutpat efficitur. Morbi libero turpis, rutrum ut ex lobortis, vulputate dignissim dui. Pellentesque ac quam tincidunt, bibendum augue vitae, volutpat ante. Fusce ex turpis, accumsan non odio at, ultricies malesuada dui. Vivamus a arcu sit amet diam blandit cursus nec sed nulla. Aenean neque diam, pulvinar dapibus urna eu, placerat dignissim risus. Morbi egestas mi non pellentesque dapibus. Sed ante nisi, bibendum vitae massa a, mattis rutrum lorem. In id ligula id erat suscipit porta.
+            </p>
+
+        </div>
 
         <div class="centered">
-            <div id="game-container">
-            
+            <div id="game-container" class="row">
+
                 <div id="playarea-container" class="col-xs-10">
                     <div id="office-container">
-                        <div id="couch_blue_2" class="draggable game-object"></div>
-                        <div id="cubicle" class="draggable game-object"></div>
+                        <div id="office-top-padding">
+                        </div>
+                        <div class="row">
+                            <button type="button" id="restart-btn" class="btn btn-default col-xs-2">Restart</button>
+                        </div>
+                        <div class="row">
+                            <button type="button" id="save-btn" class="btn btn-default col-xs-2">Save</button>
+                        </div>
+
+
+                        <div class="delete-row row">
+                            <button type="button" id="delete-btn" class="btn btn-default offset-xs-9">Trash</button>
+                        </div>
+
+
+                        <div id="game-objects">
+                            <img src="img/couch_blue2_0.png" class="draggable game-object"></img>
+                            <img src="img/cubicle_0.png" class="draggable game-object"></img>
+                        </div>
+                        
                     </div>
                 </div>
+
                 <div id="menu-container" class="col-xs-2">
-                test
+                    Menu here
                 </div>
             </div>
         </div>
@@ -46,28 +72,6 @@
         <h1>
             PAGE FOOTER
         </h1>
-
-<!--
-        <div class="centered">
-            <div id="game-container">
-                <div id="playarea-container">
-                    <div id="blue-square" class="draggable"></div>
-                    <div id="red-rect" class="draggable"></div>
-                </div>
-                <div id="menu-container">
-                </div>
-            </div>
-        </div>
--->
-
-<!--
-        <div id="menu-container2" class="col-xs-2">
-            whyyy
-        </div>
-        <div id="playarea-container2" class="col-xs-10" >
-            whyyy
-        </div>
--->
-
+    </div>
     </body>
 </html>
