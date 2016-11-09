@@ -27,6 +27,7 @@ $(window).on("load", function() {
     menu_rotation = (menu_rotation+1)%4;
     console.log(menu_rotation);
 
+    var menuList =  document.getElementsByClassName("menu_object"); 
     $.each(menuList, function(i, menu_obj) {
       //change file to new rotation here    
     });
