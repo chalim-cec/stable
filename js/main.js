@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 $(window).on("load", function() {
 
-  $("#save-btn").click(function() { 
+  $("#save_btn").click(function() { 
     var node = document.getElementById("playarea-container");
     domtoimage.toBlob(node).then(function (blob) {
         window.saveAs(blob, 'office-screenshot.png');
@@ -14,7 +14,7 @@ $(window).on("load", function() {
   });
 
   //deletes all items
-  $("#restart-btn").click(function() { 
+  $("#restart_btn").click(function() { 
     $(".game-object").remove();
   });
 
@@ -74,7 +74,7 @@ function dragMoveListener (event) {
   target.setAttribute('data-y', y);
 
   $(target).on('touchend mouseup', function(e){
-    if($(target).overlaps('#delete-btn').length){
+    if($(target).overlaps('#delete_btn').length){
       $(target).remove();
     }
   });
