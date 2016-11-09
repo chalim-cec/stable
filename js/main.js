@@ -60,6 +60,8 @@ $(window).on("load", function() {
 
     for (i=0; i<menuList.length; i++){
       var src = menuList[i].getAttribute('src');
+      console.log(src);
+      /*
       var regexp = /([a-zA-Z0-9\-]*\_)(\d)\.svg$/;
       var match = regexp.exec(src);
       var imageName = (match[1]);   //before underscore
@@ -82,6 +84,8 @@ $(window).on("load", function() {
               menuList[i].setAttribute('src', 'img/'+imageName+rotation+'.svg');
           }
       });
+      */
+
 
       //var x = menuList[i].getAttribute('src');
       //console.log(x);
