@@ -24,6 +24,7 @@ $(window).on("load", function() {
     console.log("hello!");
     var menuList =  document.getElementsByClassName("menu_object"); 
 
+    /*
     var src = menuList[6].getAttribute('src');
     var regexp = /([a-zA-Z0-9\-]*\_)(\d)\.svg$/;
     var match = regexp.exec(src);
@@ -37,14 +38,38 @@ $(window).on("load", function() {
         error: function()
         {
             console.log("doesn't exist!");
+
         },
         success: function()
         {
             console.log("exists!");
         }
     });
+    */
 
     for (i=0; i<menuList.length; i++){
+      var src = menuList[i].getAttribute('src');
+      var regexp = /([a-zA-Z0-9\-]*\_)(\d)\.svg$/;
+      var match = regexp.exec(src);
+      var imageName = (match[1]);   //before underscore
+      var rotation = match[2];      //number [0,3] after underscore
+      rotation++;
+
+      $.ajax({
+          url:'img/'+imageName+rotation+'.svg',
+          type:'HEAD',
+          error: function()
+          {
+              menuList[i].setAttribute('src', 'img/'+imageName+'0'+'.svg');
+          },
+          success: function()
+          {
+              menuList[i].setAttribute('src', 'img/'+imageName+rotation+'.svg');
+          }
+      });
+
+
+
       //var x = menuList[i].getAttribute('src');
       //console.log(x);
       //menuList[i].setAttribute('src', "img/couch_blue2_0.svg");
