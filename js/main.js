@@ -6,14 +6,13 @@ $(document).ready(function() {
 
 $(window).on("load", function() {
 
-  //saves play area
   $("#save-btn").click(function() { 
-        var node = document.getElementById("playarea-container");
-        domtoimage.toBlob(node).then(function (blob) {
-            window.saveAs(blob, 'office-screenshot.png');
-        });
+    var node = document.getElementById("playarea-container");
+    domtoimage.toBlob(node).then(function (blob) {
+        window.saveAs(blob, 'office-screenshot.png');
+    });
   });
-  
+
   //deletes all items
   $("#restart-btn").click(function() { 
     $(".game-object").remove();
