@@ -41,10 +41,6 @@
 
 
 @media (orientation: portrait) {
-	#menu_container{
-		height: 200px;
-	}
-
 	#game_container{
 		height: 700px;
 	}
