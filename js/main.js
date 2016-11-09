@@ -7,42 +7,11 @@ $(document).ready(function() {
 $(window).on("load", function() {
 
   $("#save-btn").click(function() { 
-
-    var scaleBy = 5;
-    var w = 1000;
-    var h = 1000;
-    var div = document.querySelector('#playarea-container');
-    var canvas = document.createElement('canvas');
-    canvas.width = w * scaleBy;
-    canvas.height = h * scaleBy;
-    canvas.style.width = w + 'px';
-    canvas.style.height = h + 'px';
-    var context = canvas.getContext('2d');
-    context.scale(scaleBy, scaleBy);
-
-    html2canvas(div, {
-        canvas:canvas,
-        onrendered: function (canvas) {
-          canvas.toBlob(function(blob) {
-            saveAs(blob, "office-screenshot."); 
-          });
-        }
+    var node = document.getElementById("playarea-container");
+    domtoimage.toBlob(node).then(function (blob) {
+        window.saveAs(blob, 'office-screenshot.png');
     });
-    
   });
-
-/*
-  //saves play area
-  $("#save-btn").click(function() { 
-      html2canvas($("#text"), {
-          onrendered: function(canvas) {
-              canvas.toBlob(function(blob) {
-                saveAs(blob, "office-screenshot."); 
-              });
-          }
-      });
-  });
-*/
 
   //deletes all items
   $("#restart-btn").click(function() { 
