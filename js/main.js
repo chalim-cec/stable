@@ -22,10 +22,17 @@ $(window).on("load", function() {
   //rotates items in menu
   $("#rotate_btn").click(function() { 
     console.log("hello!");
-    var menuList =  document.getElementsByClassName("menu_object");
+    var menuList =  document.getElementsByClassName("menu_object"); 
+
+    var src = menuList[1].getAttribute('src');
+    var regexp = /([a-zA-Z0-9\-]*\_)(\d)\.svg$/;
+    var match = regexp.exec(src);
+    var imageName = (match[1]);   //before underscore
+    var rotation = match[2];      //number [0,3] after underscore
+    rotation++;
 
     $.ajax({
-        url:'img/couch_blue2_0.svg',
+        url:'img/'+imageName+rotation+'.svg',
         type:'HEAD',
         error: function()
         {
