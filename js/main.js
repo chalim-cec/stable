@@ -44,54 +44,15 @@ $(window).on("load", function() {
           success: function()
           {
               console.log('SUCCESS!!\ni='+i+' url='+'img/'+imageName+rotation+'.svg');
-              menu_object.setAttribute('src', 'img/'+imageName+rotation+'.svg');
+              menu_objec.setAttribute('src', 'img/'+imageName+rotation+'.svg');
           }
       });
 
-    });
+    });   //foreach menu item
 
+  });   //rotate button click
 
-/*
-    for (i=0; i<2; i++){
-      var src = menuList[i].getAttribute('src');
-      isoRotate(menuList[i], src);
-      console.log('i='+i);
-      //var x = menuList[i].getAttribute('src');
-      //console.log(x);
-      //menuList[i].setAttribute('src', "img/couch-blue2_0.svg");
-
-    }
-*/
-
-  });
-
-});
-
-/*
-function isoRotate(menu_obj) {
-  src = menu_obj.getAttribute('src');
-  var regexp = /([a-zA-Z0-9\-]*\_)(\d)\.svg$/;
-  var match = regexp.exec(src);
-  var imageName = (match[1]);   //before underscore
-  var rotation = match[2];      //number [0,3] after underscore
-  rotation++;
-  $.ajax({
-      url:'img/'+imageName+rotation+'.svg',
-      type:'HEAD',
-      error: function()
-      {
-          console.log('ERROR!\ni='+i+' url='+'img/'+imageName+rotation+'.svg');
-          menuList[i].setAttribute('src', 'img/'+imageName+'0'+'.svg');
-      },
-      success: function()
-      {
-          console.log('SUCCESS!!\ni='+i+' url='+'img/'+imageName+rotation+'.svg');
-          menuList[i].setAttribute('src', 'img/'+imageName+rotation+'.svg');
-      }
-  });
-  //menu_obj.setAttribute('src', "img/couch-blue2_0.svg");
-}
-*/
+});   //onload
 
 $( window ).resize(function() {
   gameSize();
