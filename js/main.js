@@ -25,15 +25,15 @@ $(window).on("load", function() {
     var menuList =  document.getElementsByClassName("menu_object");
 
     $.ajax({
-        url:'img/couch_blue2_23.svg',
+        url:'img/couch_blue2_0.svg',
         type:'HEAD',
         error: function()
         {
-            console.log("exists!");
+            console.log("doesn't exist!");
         },
         success: function()
         {
-            console.log("doesn't exist!");
+            console.log("exists!");
         }
     });
 
