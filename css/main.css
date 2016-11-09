@@ -46,6 +46,9 @@
 	#game_container{
 		height: 700px;
 	}
+	#menu-container{
+		height: 200px;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 700px) {

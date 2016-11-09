@@ -19,6 +19,19 @@ $(window).on("load", function() {
     $(".game_object").remove();
   });
 
+  var menu_rotation = 0;
+
+  //rotates items in menu
+  $("#rotate_btn").click(function() { 
+    menu_rotation = (menu_rotation+1)%4;
+    console.log(menu_rotation);
+
+    $.each(menuList, function(i, menu_obj) {
+      //change file to new rotation here    
+    });
+  });  
+
+/*
   //rotates items in menu
   $("#rotate_btn").click(function() { 
     var menuList =  document.getElementsByClassName("menu_object"); 
@@ -51,6 +64,7 @@ $(window).on("load", function() {
     });   //foreach menu item
 
   });   //rotate button click
+*/
 
 });   //onload
 
