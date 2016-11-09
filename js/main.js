@@ -6,8 +6,9 @@ $(document).ready(function() {
 
 $(window).on("load", function() {
 
+  //save screenshot
   $("#save_btn").click(function() { 
-    var node = document.getElementById("playarea-container");
+    var node = document.getElementById("playarea_container");
     domtoimage.toBlob(node).then(function (blob) {
         window.saveAs(blob, 'office-screenshot.png');
     });
@@ -15,7 +16,33 @@ $(window).on("load", function() {
 
   //deletes all items
   $("#restart_btn").click(function() { 
-    $(".game-object").remove();
+    $(".game_object").remove();
+  });
+
+  //rotates items in menu
+  $("#rotate_btn").click(function() { 
+    console.log("hello!");
+    var menuList =  document.getElementsByClassName("menu_object");
+
+    $.ajax({
+        url:'img/couch_blue2_23.svg',
+        type:'HEAD',
+        error: function()
+        {
+            console.log("exists!");
+        },
+        success: function()
+        {
+            console.log("doesn't exist!");
+        }
+    });
+
+    for (i=0; i<menuList.length; i++){
+      //var x = menuList[i].getAttribute('src');
+      //console.log(x);
+      //menuList[i].setAttribute('src', "img/couch_blue2_0.svg");
+
+    }
   });
 
 });
@@ -27,15 +54,15 @@ $( window ).resize(function() {
 function gameSize() {
   if (matchMedia('all and (orientation:portrait)').matches){
     console.log("test");
-    $("#playarea-container").removeClass("col-xs-10");
-    $("#playarea-container").addClass("col-xs-12");
-    $("#menu-container").removeClass("col-xs-2");
-    $("#menu-container").addClass("col-xs-12");
+    $("#playarea_container").removeClass("col-xs-10");
+    $("#playarea_container").addClass("col-xs-12");
+    $("#menu_container").removeClass("col-xs-2");
+    $("#menu_container").addClass("col-xs-12");
   } else { 
-    $("#playarea-container").addClass("col-xs-10");
-    $("#playarea-container").removeClass("col-xs-12");
-    $("#menu-container").addClass("col-xs-2");
-    $("#menu-container").removeClass("col-xs-12");
+    $("#playarea_container").addClass("col-xs-10");
+    $("#playarea_container").removeClass("col-xs-12");
+    $("#menu_container").addClass("col-xs-2");
+    $("#menu_container").removeClass("col-xs-12");
   }
 }
 
