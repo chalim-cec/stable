@@ -31,41 +31,6 @@ $(window).on("load", function() {
     });
   });  
 
-/*
-  //rotates items in menu
-  $("#rotate_btn").click(function() { 
-    var menuList =  document.getElementsByClassName("menu_object"); 
-
-    $.each(menuList, function(i, menu_obj) {
-      //isoRotate(menu_obj);
-      console.log('i='+i);
-
-      src = menu_obj.getAttribute('src');
-      var regexp = /([a-zA-Z0-9\-]*\_)(\d)\.svg$/;
-      var match = regexp.exec(src);
-      var imageName = (match[1]);   //before underscore
-      var rotation = match[2];      //number [0,3] after underscore
-      rotation++;
-      $.ajax({
-          url:'img/'+imageName+rotation+'.svg',
-          type:'HEAD',
-          error: function()
-          {
-              console.log('ERROR!\ni='+i+' url='+'img/'+imageName+rotation+'.svg');
-              menu_object.setAttribute('src', 'img/'+imageName+'0'+'.svg');
-          },
-          success: function()
-          {
-              console.log('SUCCESS!!\ni='+i+' url='+'img/'+imageName+rotation+'.svg');
-              menu_objec.setAttribute('src', 'img/'+imageName+rotation+'.svg');
-          }
-      });
-
-    });   //foreach menu item
-
-  });   //rotate button click
-*/
-
 });   //onload
 
 $( window ).resize(function() {
