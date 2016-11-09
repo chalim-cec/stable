@@ -60,12 +60,12 @@ $(window).on("load", function() {
           type:'HEAD',
           error: function()
           {
-              console.log('ERROR!\ni='+i' url='+'img/'+imageName+rotation+'.svg');
+              console.log('ERROR!\ni='+i+' url='+'img/'+imageName+rotation+'.svg');
               menuList[i].setAttribute('src', 'img/'+imageName+'0'+'.svg');
           },
           success: function()
           {
-              console.log('SUCCESS!!\ni='+i' url='+'img/'+imageName+rotation+'.svg');
+              console.log('SUCCESS!!\ni='+i+' url='+'img/'+imageName+rotation+'.svg');
               menuList[i].setAttribute('src', 'img/'+imageName+rotation+'.svg');
           }
       });
