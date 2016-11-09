@@ -55,6 +55,8 @@ $(window).on("load", function() {
       var rotation = match[2];      //number [0,3] after underscore
       rotation++;
 
+      console.log('i='+i);
+
       $.ajax({
           url:'img/'+imageName+rotation+'.svg',
           type:'HEAD',
