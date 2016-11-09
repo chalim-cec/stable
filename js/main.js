@@ -24,7 +24,7 @@ $(window).on("load", function() {
     console.log("hello!");
     var menuList =  document.getElementsByClassName("menu_object"); 
 
-    var src = menuList[1].getAttribute('src');
+    var src = menuList[6].getAttribute('src');
     var regexp = /([a-zA-Z0-9\-]*\_)(\d)\.svg$/;
     var match = regexp.exec(src);
     var imageName = (match[1]);   //before underscore
