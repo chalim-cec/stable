@@ -2,6 +2,16 @@
     text-align: center;
 }
 
+.vert-center{
+    position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.vert-center_container{
+	height: 100%;
+}
+
 #game_container{
 	width: 800px;
 	height: 500px;
@@ -42,6 +52,10 @@
 	margin: 3px;
 }
 
+#menu_nav{
+	overflow: hidden;
+}
+
 @media screen and (orientation: landscape){
 	#office_top_padding{
 		min-height: 20px;
@@ -65,6 +79,7 @@
 		height: 80px;
 		margin: 3px;
 	}
+
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 700px) {

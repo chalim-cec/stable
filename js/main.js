@@ -32,7 +32,7 @@ $(window).on("load", function() {
       var regexp = /([a-zA-Z0-9\-]*\_)(\d)\.svg$/;
       var match = regexp.exec(src);
       var imageName = (match[1]);   //before underscore  
-      menu_obj.setAttribute('src', 'img/'+imageName+rotation+'.svg');              
+      menu_obj.setAttribute('src', 'img/'+imageName+menu_rotation+'.svg');              
     });
   });  
 
@@ -45,15 +45,34 @@ $( window ).resize(function() {
 function gameSize() {
   if (matchMedia('all and (orientation:portrait)').matches){
     console.log("test");
+    /*menu sits horizontally, to be below office*/
     $("#playarea_container").removeClass("col-xs-10");
     $("#playarea_container").addClass("col-xs-12");
     $("#menu_container").removeClass("col-xs-2");
     $("#menu_container").addClass("col-xs-12");
+    
+    /*move rotate button to left, menu nav to right*/
+    $("#rotate_container").addClass("col-xs-1 vert-center_container");
+    $("#rotate_btn").addClass("vert-center");
+    $("#menu_nav_container").addClass("col-xs-1 vert-center_container");
+    $("#menu_nav").addClass("vert-center");
+    $("#menu_objects").addClass("col-xs-10");
+    $("#menu_objects").addClass("vert-center");
+
   } else { 
+    /*menu sits vertically, to left of office*/
     $("#playarea_container").addClass("col-xs-10");
     $("#playarea_container").removeClass("col-xs-12");
     $("#menu_container").addClass("col-xs-2");
     $("#menu_container").removeClass("col-xs-12");
+
+    /*rotate button at top, menu nav at bottom*/
+    $("#rotate_container").removeClass("col-xs-1 vert-center_container");
+    $("#rotate_btn").removeClass("vert-center");
+    $("#menu_nav_container").removeClass("col-xs-1 vert-center_container");
+    $("#menu_nav").removeClass("vert-center");
+    $("#menu_objects").removeClass("col-xs-10");
+    $("#menu_objects").removeClass("vert-center");
   }
 }
 
