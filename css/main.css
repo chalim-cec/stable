@@ -66,12 +66,15 @@
 		margin: 3px;
 	}
 
-/*
 	#rotate_btn{
-	  top: 50%;
-	  transform: translateY(-50%);
+	    position: relative;
+    	top: 50%;
+    	transform: translateY(-50%);
 	}
-*/
+
+	#rotate_container{
+		height: 100%;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 700px) {
