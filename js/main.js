@@ -45,15 +45,25 @@ $( window ).resize(function() {
 function gameSize() {
   if (matchMedia('all and (orientation:portrait)').matches){
     console.log("test");
+    /*menu sits horizontally, to be below office*/
     $("#playarea_container").removeClass("col-xs-10");
     $("#playarea_container").addClass("col-xs-12");
     $("#menu_container").removeClass("col-xs-2");
     $("#menu_container").addClass("col-xs-12");
+    
+    /*move rotate button to left*/
+    $("#rotate_btn").addClass("col-xs-1");
+    $("#menu_objects").addClass("col-xs-10");
   } else { 
+    /*menu sits vertically, to left of office*/
     $("#playarea_container").addClass("col-xs-10");
     $("#playarea_container").removeClass("col-xs-12");
     $("#menu_container").addClass("col-xs-2");
     $("#menu_container").removeClass("col-xs-12");
+
+    /*rotate button at top*/
+    $("#rotate_btn").removeClass("col-xs-1");
+    $("#menu_objects").removeClass("col-xs-10");
   }
 }
 

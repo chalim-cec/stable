@@ -65,6 +65,13 @@
 		height: 80px;
 		margin: 3px;
 	}
+
+/*
+	#rotate_btn{
+	  top: 50%;
+	  transform: translateY(-50%);
+	}
+*/
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 700px) {
