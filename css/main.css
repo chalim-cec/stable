@@ -2,6 +2,16 @@
     text-align: center;
 }
 
+.vert-center{
+    position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.vert-center_container{
+	height: 100%;
+}
+
 #game_container{
 	width: 800px;
 	height: 500px;
@@ -68,16 +78,6 @@
 		width: 80px;
 		height: 80px;
 		margin: 3px;
-	}
-
-	.vert-center{
-	    position: relative;
-    	top: 50%;
-    	transform: translateY(-50%);
-	}
-
-	.vert-center_container{
-		height: 100%;
 	}
 
 }
