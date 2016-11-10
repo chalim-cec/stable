@@ -39,7 +39,13 @@ $(window).on("load", function() {
       var img =  $('<img class="draggable game_object">');
       img.attr('src', src);
       img.appendTo('#game_objects');
-  });  
+      var myImg = $('#game_objects').children().last();
+      myImg.style.webkitTransform =
+      myImg.style.transform =
+        'translate(' + 100 + 'px, ' + 100 + 'px)';
+      myImg.setAttribute('data-x', x);
+      myImg.setAttribute('data-y', y);
+      });  
 
 });   //onload
 
