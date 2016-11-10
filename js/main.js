@@ -51,8 +51,9 @@ function gameSize() {
     $("#menu_container").removeClass("col-xs-2");
     $("#menu_container").addClass("col-xs-12");
     
-    /*move rotate button to left*/
+    /*move rotate button to left, menu nav to right*/
     $("#rotate_container").addClass("col-xs-1");
+    $("#menu_nav_container").addClass("col-xs-1");
     $("#menu_objects").addClass("col-xs-10");
   } else { 
     /*menu sits vertically, to left of office*/
@@ -61,8 +62,9 @@ function gameSize() {
     $("#menu_container").addClass("col-xs-2");
     $("#menu_container").removeClass("col-xs-12");
 
-    /*rotate button at top*/
+    /*rotate button at top, menu nav at bottom*/
     $("#rotate_container").removeClass("col-xs-1");
+    $("#menu_nav_container").removeClass("col-xs-1");
     $("#menu_objects").removeClass("col-xs-10");
   }
 }
