@@ -6,6 +6,8 @@ $(document).ready(function() {
 
 $(window).on("load", function() {
 
+  var menu_rotation = 0;
+
   //save screenshot
   $("#save_btn").click(function() { 
     var node = document.getElementById("playarea_container");
@@ -19,13 +21,9 @@ $(window).on("load", function() {
     $(".game_object").remove();
   });
 
-
-  var menu_rotation = 0;
-
   //rotates items in menu
   $("#rotate_btn").click(function() { 
     menu_rotation = (menu_rotation+1)%4;
-    console.log(menu_rotation);
     var menuList =  document.getElementsByClassName("menu_object"); 
     $.each(menuList, function(i, menu_obj) {
       src = menu_obj.getAttribute('src');
@@ -34,6 +32,13 @@ $(window).on("load", function() {
       var imageName = (match[1]);   //before underscore  
       menu_obj.setAttribute('src', 'img/'+imageName+menu_rotation+'.svg');              
     });
+  });
+
+  $(".menu_object").click(function(event) { ;
+      var src = event.target.getAttribute('src');
+      var img =  $('<img class="draggable game_object">');
+      img.attr('src', src);
+      img.appendTo('#game_objects');
   });  
 
 });   //onload
@@ -44,7 +49,6 @@ $( window ).resize(function() {
 
 function gameSize() {
   if (matchMedia('all and (orientation:portrait)').matches){
-    console.log("test");
     /*menu sits horizontally, to be below office*/
     $("#playarea_container").removeClass("col-xs-10");
     $("#playarea_container").addClass("col-xs-12");
