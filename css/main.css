@@ -36,6 +36,12 @@
 	height: 460px;
 }
 
+.menu_object{
+	width: 50px;
+	height: 50px;
+	margin: 3px;
+}
+
 @media screen and (orientation: landscape){
 	#office_top_padding{
 		min-height: 20px;
@@ -52,6 +58,12 @@
 	}
 	#menu-container{
 		height: 200px;
+	}
+
+	.menu_object{
+		width: 80px;
+		height: 80px;
+		margin: 3px;
 	}
 }
 
@@ -85,12 +97,6 @@
 	height: 100px;
 	-webkit-transform: translate(0px, 0px);
 	      transform: translate(0px, 0px);
-}
-
-.menu_object{
-	width: 50px;
-	height: 50px;
-	margin: 3px;
 }
 
 .delete_row{
