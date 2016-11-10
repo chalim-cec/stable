@@ -2,21 +2,22 @@
     text-align: center;
 }
 
-#game-container{
+#game_container{
 	width: 800px;
 	height: 500px;
 	min-height: 352px;
 	display:inline-block;
 }
 
-#menu-container{
+#menu_container{
 	height: 500px;
 	background-color: #e0e0e0;
 	display:inline-block;
 	float: right;
+	padding: 0px 5px 0px 5px;
 }
 
-#playarea-container{
+#playarea_container{
 	height: 500px;
 	background-color: #cccccc;
 	display:inline-block;
@@ -27,7 +28,7 @@
 }
 
 
-#office-container{
+#office_container{
 	display:inline-block;
     margin: 0 auto;
 	background-image: url('../img/office_blank.png');
@@ -35,71 +36,74 @@
 	height: 460px;
 }
 
-#office-top-padding{
-	min-height: 20px;
+.menu_object{
+	width: 50px;
+	height: 50px;
+	margin: 3px;
 }
 
+@media screen and (orientation: landscape){
+	#office_top_padding{
+		min-height: 20px;
+	}
+}
 
 @media (orientation: portrait) {
+	#menu_container{
+		height: 200px;
+	}
+
+	#game_container{
+		height: 700px;
+	}
 	#menu-container{
 		height: 200px;
 	}
 
-	#game-container{
-		height: 700px;
+	.menu_object{
+		width: 80px;
+		height: 80px;
+		margin: 3px;
 	}
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 700px) {
 
-	#game-container{
+	#game_container{
 		height: 95vh;
 		width: 90vw;
 		min-height: 460px;
 	}
 
 
-	#playarea-container{
+	#playarea_container{
 		height: 95vh;
 		min-height: 460px;
 	}
 
-	#menu-container{
+	#menu_container{
 		height: 95vh;
 		min-height: 460px;
 	}
 
 }
 
-
-#cubicle{
-	  background-image: url('../img/cubicle_0.svg');
-}
-
-#red-rect{
-  width: 60px;
-  height: 30px;
-  background-color: #f33;
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-}
-
-#game-objects{
+#game_objects{
 	min-height: 420px;
 }
 
-.game-object{
+.game_object{
 	width: 100px;
 	height: 100px;
 	-webkit-transform: translate(0px, 0px);
 	      transform: translate(0px, 0px);
 }
 
-.delete-row{
+.delete_row{
 	position: absolute;
 	bottom: 20px;
 }
 
-#delete-btn{
+#delete_btn{
 	z-index: -2;
 }

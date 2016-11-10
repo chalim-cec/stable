@@ -3,6 +3,10 @@
 	{
 		"selected_items":
 		[
+			[
+				"attr",
+				"setAttribute"
+			]
 		]
 	},
 	"buffers":
@@ -11,7 +15,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3765,
+				"buffer_size": 4692,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -20,7 +24,7 @@
 			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 2264,
+				"buffer_size": 3580,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -29,7 +33,7 @@
 			"file": "css/main.css",
 			"settings":
 			{
-				"buffer_size": 1537,
+				"buffer_size": 1374,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -69,15 +73,17 @@
 	[
 		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus",
 		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/css",
-		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/js"
+		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/js",
+		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/js/vendor"
 	],
 	"file_history":
 	[
+		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/js/vendor/html2canvas.js",
 		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/js/main.js"
 	],
 	"find":
 	{
-		"height": 50.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -91,6 +97,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"-container",
+			"-btn",
+			"bounds",
 			"z-index",
 			"min-h",
 			"office-container",
@@ -104,6 +113,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"_container",
+			"_btn",
 			"playarea-container"
 		],
 		"reverse": false,
@@ -115,7 +126,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -124,15 +135,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3765,
+						"buffer_size": 4692,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								968,
-								968
+								4574,
+								4574
 							]
 						],
 						"settings":
@@ -142,10 +153,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 323.0,
+						"translation.y": 1267.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -154,15 +165,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2264,
+						"buffer_size": 3580,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								143,
-								143
+								677,
+								677
 							]
 						],
 						"settings":
@@ -172,10 +183,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 274.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -184,15 +195,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1537,
+						"buffer_size": 1374,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								336,
-								336
+								785,
+								785
 							]
 						],
 						"settings":
@@ -200,7 +211,7 @@
 							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 389.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -211,7 +222,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 37.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -248,7 +259,7 @@
 	"project": "CEC_Melb_Prospectus.sublime-project",
 	"replace":
 	{
-		"height": 70.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -286,7 +297,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 312.0,
+	"side_bar_width": 50.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

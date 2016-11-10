@@ -6,19 +6,37 @@ $(document).ready(function() {
 
 $(window).on("load", function() {
 
-  $("#save-btn").click(function() { 
-    var node = document.getElementById("playarea-container");
+  //save screenshot
+  $("#save_btn").click(function() { 
+    var node = document.getElementById("playarea_container");
     domtoimage.toBlob(node).then(function (blob) {
         window.saveAs(blob, 'office-screenshot.png');
     });
   });
 
   //deletes all items
-  $("#restart-btn").click(function() { 
-    $(".game-object").remove();
+  $("#restart_btn").click(function() { 
+    $(".game_object").remove();
   });
 
-});
+
+  var menu_rotation = 0;
+
+  //rotates items in menu
+  $("#rotate_btn").click(function() { 
+    menu_rotation = (menu_rotation+1)%4;
+    console.log(menu_rotation);
+    var menuList =  document.getElementsByClassName("menu_object"); 
+    $.each(menuList, function(i, menu_obj) {
+      src = menu_obj.getAttribute('src');
+      var regexp = /([a-zA-Z0-9\-]*\_)(\d)\.svg$/;
+      var match = regexp.exec(src);
+      var imageName = (match[1]);   //before underscore  
+      menu_obj.setAttribute('src', 'img/'+imageName+rotation+'.svg');              
+    });
+  });  
+
+});   //onload
 
 $( window ).resize(function() {
   gameSize();
@@ -27,15 +45,15 @@ $( window ).resize(function() {
 function gameSize() {
   if (matchMedia('all and (orientation:portrait)').matches){
     console.log("test");
-    $("#playarea-container").removeClass("col-xs-10");
-    $("#playarea-container").addClass("col-xs-12");
-    $("#menu-container").removeClass("col-xs-2");
-    $("#menu-container").addClass("col-xs-12");
+    $("#playarea_container").removeClass("col-xs-10");
+    $("#playarea_container").addClass("col-xs-12");
+    $("#menu_container").removeClass("col-xs-2");
+    $("#menu_container").addClass("col-xs-12");
   } else { 
-    $("#playarea-container").addClass("col-xs-10");
-    $("#playarea-container").removeClass("col-xs-12");
-    $("#menu-container").addClass("col-xs-2");
-    $("#menu-container").removeClass("col-xs-12");
+    $("#playarea_container").addClass("col-xs-10");
+    $("#playarea_container").removeClass("col-xs-12");
+    $("#menu_container").addClass("col-xs-2");
+    $("#menu_container").removeClass("col-xs-12");
   }
 }
 
@@ -74,7 +92,7 @@ function dragMoveListener (event) {
   target.setAttribute('data-y', y);
 
   $(target).on('touchend mouseup', function(e){
-    if($(target).overlaps('#delete-btn').length){
+    if($(target).overlaps('#delete_btn').length){
       $(target).remove();
     }
   });
