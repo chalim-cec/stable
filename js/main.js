@@ -26,10 +26,13 @@ $(window).on("load", function() {
   $("#rotate_btn").click(function() { 
     menu_rotation = (menu_rotation+1)%4;
     console.log(menu_rotation);
-
     var menuList =  document.getElementsByClassName("menu_object"); 
     $.each(menuList, function(i, menu_obj) {
-      //change file to new rotation here    
+      src = menu_obj.getAttribute('src');
+      var regexp = /([a-zA-Z0-9\-]*\_)(\d)\.svg$/;
+      var match = regexp.exec(src);
+      var imageName = (match[1]);   //before underscore  
+      menu_obj.setAttribute('src', 'img/'+imageName+menu_rotation+'.svg');              
     });
   });  
 
