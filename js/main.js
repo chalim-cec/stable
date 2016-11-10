@@ -32,7 +32,7 @@ $(window).on("load", function() {
       var regexp = /([a-zA-Z0-9\-]*\_)(\d)\.svg$/;
       var match = regexp.exec(src);
       var imageName = (match[1]);   //before underscore  
-      menu_obj.setAttribute('src', 'img/'+imageName+rotation+'.svg');              
+      menu_obj.setAttribute('src', 'img/'+imageName+menu_rotation+'.svg');              
     });
   });  
 
