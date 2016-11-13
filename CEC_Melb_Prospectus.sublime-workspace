@@ -15,7 +15,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 4692,
+				"buffer_size": 5601,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -24,7 +24,7 @@
 			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 3580,
+				"buffer_size": 4080,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -33,7 +33,7 @@
 			"file": "css/main.css",
 			"settings":
 			{
-				"buffer_size": 1374,
+				"buffer_size": 1636,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -97,6 +97,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"office_blank",
+			"console.log",
 			"-container",
 			"-btn",
 			"bounds",
@@ -126,7 +128,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -135,15 +137,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4692,
+						"buffer_size": 5601,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4574,
-								4574
+								3116,
+								3116
 							]
 						],
 						"settings":
@@ -153,10 +155,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1267.0,
+						"translation.y": 985.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -165,15 +167,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3580,
+						"buffer_size": 4080,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								677,
-								677
+								1407,
+								1407
 							]
 						],
 						"settings":
@@ -183,10 +185,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 274.0,
+						"translation.y": 430.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -195,15 +197,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1374,
+						"buffer_size": 1636,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								785,
-								785
+								674,
+								674
 							]
 						],
 						"settings":
@@ -211,7 +213,7 @@
 							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 389.0,
+						"translation.y": 2317.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -297,7 +299,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 50.0,
+	"side_bar_width": 194.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
