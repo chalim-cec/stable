@@ -8,6 +8,39 @@ $(window).on("load", function() {
 
   var menu_rotation = 0;
 
+  $("#menu_next").click(function(event) {
+      event.preventDefault();
+      var current_menu = $(".menu-active")
+      if (current_menu.next(".menu").length){
+        current_menu.next("div").addClass("menu-active");
+        console.log("ye");
+        console.log(current_menu.next(".menu"));
+      } else { 
+        current_menu.parent().children(".menu").first().addClass("menu-active");
+        console.log("na");
+      }
+      current_menu.removeClass("menu-active");
+  });
+
+  $("#menu_back").click(function(event) {
+      event.preventDefault();
+      var current_menu = $(".menu-active")
+      if (current_menu.prev(".menu").length){
+        current_menu.prev("div").addClass("menu-active");
+        console.log("ye");
+        console.log(current_menu.prev(".menu"));
+      } else { 
+        current_menu.parent().children(".menu").last().addClass("menu-active");
+        console.log("na");
+      }
+      current_menu.removeClass("menu-active");
+  });
+
+
+  $("#menu_prev").click(function(event) {
+      event.preventDefault();
+  });
+
   //save screenshot
   $("#save_btn").click(function() { 
     var node = document.getElementById("playarea_container");
