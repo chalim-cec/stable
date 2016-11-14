@@ -56,6 +56,14 @@
 	overflow: hidden;
 }
 
+.menu{
+	display: none;
+}
+
+.menu-active{
+	display: inline;
+}
+
 @media screen and (orientation: landscape){
 	#office_top_padding{
 		min-height: 20px;

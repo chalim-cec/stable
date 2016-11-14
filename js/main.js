@@ -8,6 +8,39 @@ $(window).on("load", function() {
 
   var menu_rotation = 0;
 
+  $("#menu_next").click(function(event) {
+      event.preventDefault();
+      var current_menu = $(".menu-active")
+      if (current_menu.next(".menu").length){
+        current_menu.next("div").addClass("menu-active");
+        console.log("ye");
+        console.log(current_menu.next(".menu"));
+      } else { 
+        current_menu.parent().children(".menu").first().addClass("menu-active");
+        console.log("na");
+      }
+      current_menu.removeClass("menu-active");
+  });
+
+  $("#menu_back").click(function(event) {
+      event.preventDefault();
+      var current_menu = $(".menu-active")
+      if (current_menu.prev(".menu").length){
+        current_menu.prev("div").addClass("menu-active");
+        console.log("ye");
+        console.log(current_menu.prev(".menu"));
+      } else { 
+        current_menu.parent().children(".menu").last().addClass("menu-active");
+        console.log("na");
+      }
+      current_menu.removeClass("menu-active");
+  });
+
+
+  $("#menu_prev").click(function(event) {
+      event.preventDefault();
+  });
+
   //save screenshot
   $("#save_btn").click(function() { 
     var node = document.getElementById("playarea_container");
@@ -61,8 +94,8 @@ function gameSize() {
     $("#rotate_btn").addClass("vert-center");
     $("#menu_nav_container").addClass("col-xs-1 vert-center_container");
     $("#menu_nav").addClass("vert-center");
-    $("#menu_objects").addClass("col-xs-10");
-    $("#menu_objects").addClass("vert-center");
+    $(".menu").addClass("col-xs-10");
+    $(".menu").addClass("vert-center");
 
   } else { 
     /*menu sits vertically, to left of office*/
@@ -76,8 +109,8 @@ function gameSize() {
     $("#rotate_btn").removeClass("vert-center");
     $("#menu_nav_container").removeClass("col-xs-1 vert-center_container");
     $("#menu_nav").removeClass("vert-center");
-    $("#menu_objects").removeClass("col-xs-10");
-    $("#menu_objects").removeClass("vert-center");
+    $(".menu").removeClass("col-xs-10");
+    $(".menu").removeClass("vert-center");
   }
 }
 
