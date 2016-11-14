@@ -10,30 +10,12 @@ $(window).on("load", function() {
 
   $("#menu_next").click(function(event) {
       event.preventDefault();
-      var current_menu = $(".menu-active")
-      if (current_menu.next(".menu").length){
-        current_menu.next("div").addClass("menu-active");
-        console.log("ye");
-        console.log(current_menu.next(".menu"));
-      } else { 
-        current_menu.parent().children(".menu").first().addClass("menu-active");
-        console.log("na");
-      }
-      current_menu.removeClass("menu-active");
+      menu_next();
   });
 
   $("#menu_back").click(function(event) {
       event.preventDefault();
-      var current_menu = $(".menu-active")
-      if (current_menu.prev(".menu").length){
-        current_menu.prev("div").addClass("menu-active");
-        console.log("ye");
-        console.log(current_menu.prev(".menu"));
-      } else { 
-        current_menu.parent().children(".menu").last().addClass("menu-active");
-        console.log("na");
-      }
-      current_menu.removeClass("menu-active");
+      menu_back();
   });
 
 
@@ -73,13 +55,42 @@ $(window).on("load", function() {
       var img =  $('<img class="draggable game_object">');
       img.attr('src', src);
       img.appendTo('#game_objects');
-      });  
+  });  
 
 });   //onload
 
 $( window ).resize(function() {
   gameSize();
 });
+
+//next button on menu
+function menu_next() {
+  var current_menu = $(".menu-active")
+  if (current_menu.next(".menu").length){
+    current_menu.next("div").addClass("menu-active");
+    console.log("ye");
+    console.log(current_menu.next(".menu"));
+  } else { 
+    current_menu.parent().children(".menu").first().addClass("menu-active");
+    console.log("na");
+  }
+  current_menu.removeClass("menu-active");
+}
+
+//back button on menu
+function menu_back() {
+  var current_menu = $(".menu-active")
+  if (current_menu.prev(".menu").length){
+    current_menu.prev("div").addClass("menu-active");
+    console.log("ye");
+    console.log(current_menu.prev(".menu"));
+  } else { 
+    current_menu.parent().children(".menu").last().addClass("menu-active");
+    console.log("na");
+  }
+  current_menu.removeClass("menu-active");
+}
+
 
 function gameSize() {
   if (matchMedia('all and (orientation:portrait)').matches){
