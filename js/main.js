@@ -1,3 +1,5 @@
+//number of objects as a global var here
+//var menuItemCount
 
 $(document).ready(function() {
   gameSize();
@@ -8,21 +10,27 @@ $(window).on("load", function() {
 
   var menu_rotation = 0;
 
-  $("#delete_btn").click(function(event) {
-    var dir = "../img/test/";
-    var fileextension="_0.svg";
-    $.ajax({
-      //This will retrieve the contents of the folder if the folder is configured as ‘browsable’
-      url: dir,
-      success: function (data) {
-        //Lsit all png file names in the page
-        $(data).find("a:contains(" + fileextension + ")").each(function () {
-        var filename = this.href.replace(window.location.host, "").replace("http:///","");
-          $("#view").append($(""));
-        });
-      }
-    });   
-  });
+  //loading images
+/*
+for (i=0; i++; i< menuItemCount){
+  var img = $('<img class = "menu_object">');
+  var src='../img/test/img'+i+'_0.svg';
+  img.attr('src', src);
+  var menugroup = floor(i/14);
+  img.appendTo(); //put menugroup here
+
+}
+
+
+*/
+  /*
+  var src = event.target.getAttribute('src');
+  var img =  $('<img class="draggable game_object">');
+  img.attr('src', src);
+  img.appendTo('#game_objects');
+*/
+
+  //end
 
   $("#menu_next").click(function(event) {
       event.preventDefault();
