@@ -1,5 +1,5 @@
 //number of objects as a global var here
-//var menuItemCount
+var menuItemCount = 42;
 
 $(document).ready(function() {
   gameSize();
@@ -11,18 +11,19 @@ $(window).on("load", function() {
   var menu_rotation = 0;
 
   //loading images
-/*
-for (i=0; i++; i< menuItemCount){
-  var img = $('<img class = "menu_object">');
-  var src='../img/test/img'+i+'_0.svg';
-  img.attr('src', src);
-  var menugroup = floor(i/14);
-  img.appendTo(); //put menugroup here
 
-}
+  $("#delete_btn").click(function(event) {
+    console.log("hello?");
+    for (i=0; i < menuItemCount; i++){
+      console.log(i);
+      var img = $('<img class = "menu_object">');
+      var src='img/test/img'+i+'_0.svg';
+      img.attr('src', src);
+      //var menugroup = floor(i/14);
+      img.appendTo('#everything'); //put menugroup here
+    }
+  });
 
-
-*/
   /*
   var src = event.target.getAttribute('src');
   var img =  $('<img class="draggable game_object">');
