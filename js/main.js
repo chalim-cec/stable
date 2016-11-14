@@ -94,8 +94,8 @@ function gameSize() {
     $("#rotate_btn").addClass("vert-center");
     $("#menu_nav_container").addClass("col-xs-1 vert-center_container");
     $("#menu_nav").addClass("vert-center");
-    $("#menu_objects").addClass("col-xs-10");
-    $("#menu_objects").addClass("vert-center");
+    $(".menu").addClass("col-xs-10");
+    $(".menu").addClass("vert-center");
 
   } else { 
     /*menu sits vertically, to left of office*/
@@ -109,8 +109,8 @@ function gameSize() {
     $("#rotate_btn").removeClass("vert-center");
     $("#menu_nav_container").removeClass("col-xs-1 vert-center_container");
     $("#menu_nav").removeClass("vert-center");
-    $("#menu_objects").removeClass("col-xs-10");
-    $("#menu_objects").removeClass("vert-center");
+    $(".menu").removeClass("col-xs-10");
+    $(".menu").removeClass("vert-center");
   }
 }
 
