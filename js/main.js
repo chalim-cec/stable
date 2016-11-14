@@ -8,6 +8,22 @@ $(window).on("load", function() {
 
   var menu_rotation = 0;
 
+  $("#delete_btn").click(function(event) {
+    var dir = "../img/test/";
+    var fileextension="_0.svg";
+    $.ajax({
+      //This will retrieve the contents of the folder if the folder is configured as ‘browsable’
+      url: dir,
+      success: function (data) {
+        //Lsit all png file names in the page
+        $(data).find("a:contains(" + fileextension + ")").each(function () {
+        var filename = this.href.replace(window.location.host, "").replace("http:///","");
+          $("#view").append($(""));
+        });
+      }
+    });   
+  });
+
   $("#menu_next").click(function(event) {
       event.preventDefault();
       menu_next();
