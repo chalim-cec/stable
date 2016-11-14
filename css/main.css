@@ -41,7 +41,7 @@
 #office_container{
 	display:inline-block;
     margin: 0 auto;
-	background-image: url('../img/office_blank.png');
+	background-image: url('../img/office_blank.svg');
 	width: 600px;
 	height: 460px;
 }
@@ -108,11 +108,28 @@
 }
 
 .game_object{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
 	width: 100px;
 	height: 100px;
 	-webkit-transform: translate(0px, 0px);
 	      transform: translate(0px, 0px);
 }
+
+.restart_row{
+	position: absolute;
+	top: 20px;
+}
+
+.save_row{ 
+	position: absolute;
+	top: 60px;
+}
+
 
 .delete_row{
 	position: absolute;
