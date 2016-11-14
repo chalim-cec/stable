@@ -34,17 +34,12 @@ $(window).on("load", function() {
     });
   });
 
-  $(".menu_object").click(function(event) { ;
+  //click menu object
+  $(".menu_object").click(function(event) {
       var src = event.target.getAttribute('src');
       var img =  $('<img class="draggable game_object">');
       img.attr('src', src);
       img.appendTo('#game_objects');
-      var myImg = $('#game_objects').children().last();
-      myImg.style.webkitTransform =
-      myImg.style.transform =
-        'translate(' + 100 + 'px, ' + 100 + 'px)';
-      myImg.setAttribute('data-x', x);
-      myImg.setAttribute('data-y', y);
       });  
 
 });   //onload
@@ -120,6 +115,7 @@ function dragMoveListener (event) {
   target.setAttribute('data-x', x);
   target.setAttribute('data-y', y);
 
+  //deleting item 
   $(target).on('touchend mouseup', function(e){
     if($(target).overlaps('#delete_btn').length){
       $(target).remove();
