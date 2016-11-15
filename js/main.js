@@ -200,10 +200,14 @@ function dragMoveListener (event) {
   target.setAttribute('data-x', x);
   target.setAttribute('data-y', y);
 
+  console.log("ZERO");
+
   //deleting item 
   $(target).on('touchend mouseup', function(e){
+    console.log("ONE");
     if($(target).overlaps('#delete_btn').length){
       $(target).remove();
+      console.log("TWO");
     }
   });
 
