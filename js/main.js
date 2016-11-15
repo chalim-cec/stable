@@ -8,11 +8,13 @@ $(window).on("load", function() {
   createMenu();
   gameSize();
 
+  //next menu items
   $("#menu_next").click(function(event) {
       event.preventDefault();
       menuNext();
   });
 
+  //previous menu items
   $("#menu_back").click(function(event) {
       event.preventDefault();
       menuBack();
@@ -109,7 +111,6 @@ function rotateMenuItems(menuRotation){
       var regexp = /([a-zA-Z0-9\-]*\_)(\d)\.svg$/;
       var match = regexp.exec(src);
       var imageName = (match[1]);   //before underscore 
-      console.log(imageName);
       menuObj.setAttribute('src', 'img/menuItems/'+imageName+newMenuRotation+'.svg');              
     });
     return newMenuRotation;
@@ -123,7 +124,7 @@ function rotateMenuItems(menuRotation){
     domtoimage.toBlob(node).then(function (blob) {
         window.saveAs(blob, 'office-screenshot.png');
     });
-}
+
 
 /*
  * sizes game based on screen rotation
@@ -182,6 +183,7 @@ interact('.draggable')
       var textEl = event.target.querySelector('p');
     }
 });
+
 
 function dragMoveListener (event) {
   var target = event.target,
