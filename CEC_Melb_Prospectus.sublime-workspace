@@ -15,33 +15,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 7967,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/main.js",
-			"settings":
-			{
-				"buffer_size": 5409,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/main.css",
-			"settings":
-			{
-				"buffer_size": 1874,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -75,15 +48,17 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus",
 		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/css",
 		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/js",
 		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/js/vendor"
 	],
 	"file_history":
 	[
-		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/js/vendor/html2canvas.js",
-		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/js/main.js"
+		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/css/main.css",
+		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/js/main.js",
+		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/index.html",
+		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/js/vendor/dom-to-image.min.js",
+		"/C/Users/Charlotte Lim/Documents/projects/CEC_MelbourneLeadershipProspectus/project/CEC_Melb_Prospectus/js/vendor/html2canvas.js"
 	],
 	"find":
 	{
@@ -101,6 +76,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"screen",
+			"screens",
+			"getelement",
+			"console.log",
+			"appendto",
 			".style.",
 			"favicon",
 			"office_blank",
@@ -134,97 +114,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7967,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5698,
-								5699
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2191.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "js/main.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5409,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								409,
-								409
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "css/main.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1874,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								811,
-								811
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 270.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],

@@ -147,3 +147,19 @@
 #delete_btn{
 	z-index: -2;
 }
+
+#delete-dropzone{
+	background-color: #FF0000;
+	width: 60px;
+	height: 60px;
+}
+
+#delete-dropzone.dropzone-active {
+  border-color: #fff;
+  border-style: solid;
+}
+
+.game_object.droppable{
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
