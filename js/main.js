@@ -3,19 +3,19 @@ var MENU_ITEM_COUNT = 42;
 
 $(window).on("load", function() {
 
-  var menu_rotation = 0;
+  var menuRotation = 0;
 
-  CreateMenu();
+  createMenu();
   gameSize();
 
   $("#menu_next").click(function(event) {
       event.preventDefault();
-      menu_next();
+      menuNext();
   });
 
   $("#menu_back").click(function(event) {
       event.preventDefault();
-      menu_back();
+      menuBack();
   });
 
   //save screenshot
@@ -33,16 +33,7 @@ $(window).on("load", function() {
 
   //rotates items in menu
   $("#rotate_btn").click(function() { 
-    menu_rotation = (menu_rotation+1)%4;
-    var menuList =  document.getElementsByClassName("menu-active")[0].getElementsByClassName("menu_object"); 
-    $.each(menuList, function(i, menu_obj) {
-      src = menu_obj.getAttribute('src');
-      var regexp = /([a-zA-Z0-9\-]*\_)(\d)\.svg$/;
-      var match = regexp.exec(src);
-      var imageName = (match[1]);   //before underscore 
-      console.log(imageName);
-      menu_obj.setAttribute('src', 'img/menuItems/'+imageName+menu_rotation+'.svg');              
-    });
+    menuRotation = rotateMenuItems(menuRotation);
   });
 
   //click menu object
@@ -62,7 +53,7 @@ $( window ).resize(function() {
 /*
  * creates menus and populates them, depending on MENU_ITEM_COUNT
  */ 
-function CreateMenu(){
+function createMenu(){
   //creating menu
   var menuGroupCount = Math.ceil(MENU_ITEM_COUNT/14);
   for (i=0; i < menuGroupCount; i++){
@@ -86,7 +77,7 @@ function CreateMenu(){
 /*
  * next button on menu
  */
-function menu_next() {
+function menuNext() {
   var current_menu = $(".menu-active")
   if (current_menu.next(".menu").length){
     current_menu.next("div").addClass("menu-active");
@@ -99,7 +90,7 @@ function menu_next() {
 /*
  * back button on menu
  */
-function menu_back() {
+function menuBack() {
   var current_menu = $(".menu-active")
   if (current_menu.prev(".menu").length){
     current_menu.prev("div").addClass("menu-active");
@@ -107,6 +98,23 @@ function menu_back() {
     current_menu.parent().children(".menu").last().addClass("menu-active");
   }
   current_menu.removeClass("menu-active");
+}
+
+/*
+ * rotates items in the visible menu
+ */
+function rotateMenuItems(menuRotation){
+    newMenuRotation = (menuRotation+1)%4;
+    var menuList =  document.getElementsByClassName("menu-active")[0].getElementsByClassName("menu_object"); 
+    $.each(menuList, function(i, menuObj) {
+      src = menuObj.getAttribute('src');
+      var regexp = /([a-zA-Z0-9\-]*\_)(\d)\.svg$/;
+      var match = regexp.exec(src);
+      var imageName = (match[1]);   //before underscore 
+      console.log(imageName);
+      menuObj.setAttribute('src', 'img/menuItems/'+imageName+newMenuRotation+'.svg');              
+    });
+    return newMenuRotation;
 }
 
 /*
