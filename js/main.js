@@ -20,10 +20,7 @@ $(window).on("load", function() {
 
   //save screenshot
   $("#save_btn").click(function() { 
-    var node = document.getElementById("playarea_container");
-    domtoimage.toBlob(node).then(function (blob) {
-        window.saveAs(blob, 'office-screenshot.png');
-    });
+    saveScreenshot();
   });
 
   //deletes all items
@@ -42,7 +39,7 @@ $(window).on("load", function() {
       var img =  $('<img class="draggable game_object">');
       img.attr('src', src);
       img.appendTo('#game_objects');
-  });  
+  }); 
 
 });   //onload
 
@@ -78,30 +75,31 @@ function createMenu(){
  * next button on menu
  */
 function menuNext() {
-  var current_menu = $(".menu-active")
-  if (current_menu.next(".menu").length){
-    current_menu.next("div").addClass("menu-active");
+  var currentMenu = $(".menu-active")
+  if (currentMenu.next(".menu").length){
+    currentMenu.next("div").addClass("menu-active");
   } else { 
-    current_menu.parent().children(".menu").first().addClass("menu-active");
+    currentMenu.parent().children(".menu").first().addClass("menu-active");
   }
-  current_menu.removeClass("menu-active");
+  currentMenu.removeClass("menu-active");
 }
 
 /*
  * back button on menu
  */
 function menuBack() {
-  var current_menu = $(".menu-active")
-  if (current_menu.prev(".menu").length){
-    current_menu.prev("div").addClass("menu-active");
+  var currentMenu = $(".menu-active")
+  if (currentMenu.prev(".menu").length){
+    currentMenu.prev("div").addClass("menu-active");
   } else { 
-    current_menu.parent().children(".menu").last().addClass("menu-active");
+    currentMenu.parent().children(".menu").last().addClass("menu-active");
   }
-  current_menu.removeClass("menu-active");
+  currentMenu.removeClass("menu-active");
 }
 
 /*
  * rotates items in the visible menu
+ * returns new rotation
  */
 function rotateMenuItems(menuRotation){
     newMenuRotation = (menuRotation+1)%4;
@@ -115,6 +113,16 @@ function rotateMenuItems(menuRotation){
       menuObj.setAttribute('src', 'img/menuItems/'+imageName+newMenuRotation+'.svg');              
     });
     return newMenuRotation;
+}
+
+/*
+ * saves screenshot
+ */
+ function saveScreenshot(){
+    var node = document.getElementById("playarea_container");
+    domtoimage.toBlob(node).then(function (blob) {
+        window.saveAs(blob, 'office-screenshot.png');
+    });
 }
 
 /*
