@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"remove",
+				"removeClass"
+			],
+			[
 				"attr",
 				"setAttribute"
 			]
@@ -15,7 +19,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 5601,
+				"buffer_size": 7967,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -24,7 +28,7 @@
 			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 4080,
+				"buffer_size": 5409,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -33,7 +37,7 @@
 			"file": "css/main.css",
 			"settings":
 			{
-				"buffer_size": 1636,
+				"buffer_size": 1874,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -97,6 +101,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".style.",
+			"favicon",
 			"office_blank",
 			"console.log",
 			"-container",
@@ -137,15 +143,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5601,
+						"buffer_size": 7967,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3116,
-								3116
+								5698,
+								5699
 							]
 						],
 						"settings":
@@ -155,7 +161,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 985.0,
+						"translation.y": 2191.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -167,15 +173,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4080,
+						"buffer_size": 5409,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1407,
-								1407
+								409,
+								409
 							]
 						],
 						"settings":
@@ -185,7 +191,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 430.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -197,15 +203,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1636,
+						"buffer_size": 1874,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								674,
-								674
+								811,
+								811
 							]
 						],
 						"settings":
@@ -213,7 +219,7 @@
 							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2317.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
