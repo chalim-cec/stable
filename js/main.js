@@ -9,6 +9,15 @@ $(document).ready(function() {
 $(window).on("load", function() {
 
   var menu_rotation = 0;
+  
+  //creating menus
+  var menuGroupCount = Math.ceil(menuItemCount/14);
+  for (i=0; i < menuGroupCount; i++){
+    var menuDiv = $('<div class = "menu">');
+    menuDiv.attr('data-menu_group', i);
+    menuDiv.insertBefore('#menu_nav_container');
+  }
+  $('[data-menu_group=0]').addClass("menu-active");
 
   //loading images
 
@@ -17,10 +26,10 @@ $(window).on("load", function() {
     for (i=0; i < menuItemCount; i++){
       console.log(i);
       var img = $('<img class = "menu_object">');
-      var src='img/test/img'+i+'_0.svg';
+      var src='img/menuItems/img'+i+'_0.svg';
       img.attr('src', src);
-      //var menugroup = floor(i/14);
-      img.appendTo('#everything'); //put menugroup here
+      var menuGroup = Math.floor(i/14);
+      img.appendTo('[data-menu_group='+menuGroup+']'); //put menugroup here
     }
   });
 
@@ -70,7 +79,7 @@ $(window).on("load", function() {
       var regexp = /([a-zA-Z0-9\-]*\_)(\d)\.svg$/;
       var match = regexp.exec(src);
       var imageName = (match[1]);   //before underscore  
-      menu_obj.setAttribute('src', 'img/'+imageName+menu_rotation+'.svg');              
+      menu_obj.setAttribute('src', 'img/menuItems'+imageName+menu_rotation+'.svg');              
     });
   });
 
