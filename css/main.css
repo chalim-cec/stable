@@ -163,3 +163,8 @@
     opacity: 0.4;
     filter: alpha(opacity=40); /* For IE8 and earlier */
 }
+
+.draggable{
+	-ms-touch-action: none;
+	touch-action: none;
+}
