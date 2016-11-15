@@ -10,17 +10,7 @@ $(window).on("load", function() {
 
   var menu_rotation = 0;
 
-  //creating menus
   CreateMenu();
-
-  /*
-  var src = event.target.getAttribute('src');
-  var img =  $('<img class="draggable game_object">');
-  img.attr('src', src);
-  img.appendTo('#game_objects');
-*/
-
-  //end
 
   $("#menu_next").click(function(event) {
       event.preventDefault();
@@ -30,11 +20,6 @@ $(window).on("load", function() {
   $("#menu_back").click(function(event) {
       event.preventDefault();
       menu_back();
-  });
-
-
-  $("#menu_prev").click(function(event) {
-      event.preventDefault();
   });
 
   //save screenshot
@@ -53,13 +38,14 @@ $(window).on("load", function() {
   //rotates items in menu
   $("#rotate_btn").click(function() { 
     menu_rotation = (menu_rotation+1)%4;
-    var menuList =  document.getElementsByClassName("menu_object"); 
+    var menuList =  document.getElementsByClassName("menu-active")[0].getElementsByClassName("menu_object"); 
     $.each(menuList, function(i, menu_obj) {
       src = menu_obj.getAttribute('src');
       var regexp = /([a-zA-Z0-9\-]*\_)(\d)\.svg$/;
       var match = regexp.exec(src);
-      var imageName = (match[1]);   //before underscore  
-      menu_obj.setAttribute('src', 'img/menuItems'+imageName+menu_rotation+'.svg');              
+      var imageName = (match[1]);   //before underscore 
+      console.log(imageName);
+      menu_obj.setAttribute('src', 'img/menuItems/'+imageName+menu_rotation+'.svg');              
     });
   });
 
@@ -92,7 +78,6 @@ function CreateMenu(){
 
   //populating menu
   for (i=0; i < MENU_ITEM_COUNT; i++){
-    console.log(i);
     var img = $('<img class = "menu_object">');
     var src='img/menuItems/img'+i+'_0.svg';
     img.attr('src', src);
@@ -109,11 +94,8 @@ function menu_next() {
   var current_menu = $(".menu-active")
   if (current_menu.next(".menu").length){
     current_menu.next("div").addClass("menu-active");
-    console.log("ye");
-    console.log(current_menu.next(".menu"));
   } else { 
     current_menu.parent().children(".menu").first().addClass("menu-active");
-    console.log("na");
   }
   current_menu.removeClass("menu-active");
 }
@@ -125,11 +107,8 @@ function menu_back() {
   var current_menu = $(".menu-active")
   if (current_menu.prev(".menu").length){
     current_menu.prev("div").addClass("menu-active");
-    console.log("ye");
-    console.log(current_menu.prev(".menu"));
   } else { 
     current_menu.parent().children(".menu").last().addClass("menu-active");
-    console.log("na");
   }
   current_menu.removeClass("menu-active");
 }
