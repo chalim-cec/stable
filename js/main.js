@@ -119,12 +119,12 @@ function rotateMenuItems(menuRotation){
 /*
  * saves screenshot
  */
- function saveScreenshot(){
-    var node = document.getElementById("playarea_container");
-    domtoimage.toBlob(node).then(function (blob) {
-        window.saveAs(blob, 'office-screenshot.png');
-    });
-
+function saveScreenshot(){
+  var node = document.getElementById("playarea_container");
+  domtoimage.toBlob(node).then(function (blob) {
+      window.saveAs(blob, 'office-screenshot.png');
+  });
+}
 
 /*
  * sizes game based on screen rotation
