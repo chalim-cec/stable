@@ -1,16 +1,12 @@
 //number of objects as a global var here
 var MENU_ITEM_COUNT = 42;
 
-$(document).ready(function() {
-  gameSize();
-
-});
-
 $(window).on("load", function() {
 
   var menu_rotation = 0;
 
   CreateMenu();
+  gameSize();
 
   $("#menu_next").click(function(event) {
       event.preventDefault();
