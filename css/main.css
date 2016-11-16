@@ -21,7 +21,7 @@
 
 #menu_container{
 	height: 500px;
-	background-color: #e0e0e0;
+	background-color: #f0f0f0;
 	display:inline-block;
 	float: right;
 	padding: 0px 5px 0px 5px;
@@ -29,7 +29,7 @@
 
 #playarea_container{
 	height: 500px;
-	background-color: #cccccc;
+	background-color: #93b26f;
 	display:inline-block;
 	float: right;
     display: flex;
@@ -142,21 +142,19 @@
 .delete_row{
 	position: absolute;
 	bottom: 20px;
-}
-
-#delete_btn{
-	z-index: -2;
+	right: 40px;
 }
 
 #delete-dropzone{
-	background-color: #FF0000;
-	width: 60px;
-	height: 60px;
+	opacity: 0.7;
+	width: 50px;
+	height: 50px;
 }
 
 #delete-dropzone.dropzone-active {
-  border-color: #fff;
-  border-style: solid;
+	opacity: 1;
+	border-color: #fff;
+	border-style: solid;
 }
 
 .game_object.droppable{
