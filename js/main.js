@@ -199,12 +199,28 @@ function dragMoveListener (event) {
   // update the posiion attributes
   target.setAttribute('data-x', x);
   target.setAttribute('data-y', y);
-
-  //deleting item 
-  $(target).on('touchend mouseup', function(e){
-    if($(target).overlaps('#delete_btn').length){
-      $(target).remove();
-    }
-  });
-
 }
+
+
+/*
+ * deals with delete dropzone
+ */
+interact('#delete-dropzone').dropzone({
+  accept: '.game_object',
+  // Require a 50% element overlap for a drop to be possible
+  overlap: 0.05,
+
+  ondragenter: function (event) {
+    event.target.classList.add('dropzone-active');
+    event.relatedTarget.classList.add('droppable');
+  },
+  ondragleave: function (event) {
+    event.target.classList.remove('dropzone-active');
+    event.relatedTarget.classList.remove('droppable');
+  },
+  ondrop: function (event) {
+    event.target.classList.remove('dropzone-active');
+    //because IE can't directly remove element
+    event.relatedTarget.parentElement.removeChild(event.relatedTarget);
+  }
+});
