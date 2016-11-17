@@ -1,6 +1,13 @@
 @font-face {
-    font-family: 'NeueHaasUnicaPro_bold';
+    font-family: 'NeueHaasUnicaPro';
+    src: url('../fonts/NeueHaasUnicaPro-Regular.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'NeueHaasUnicaPro';
     src: url('../fonts/NeueHaasUnicaPro-Bold.otf');
+    font-weight: bold;
 }
 
 h1{
@@ -155,11 +162,13 @@ p {
 .restart_row{
 	position: absolute;
 	top: 20px;
+	left: 40px;
 }
 
 .save_row{ 
 	position: absolute;
 	top: 60px;
+	left: 40px;
 }
 
 
@@ -168,6 +177,63 @@ p {
 	bottom: 20px;
 	right: 40px;
 }
+
+.btn-game {
+	font-family: NeueHaasUnicaPro;
+	font-weight: bold;
+	color: #FFF 	!important;
+	width: 90px;
+	padding: 4px 6px;
+	text-align: left;
+}
+
+.btn-game img {
+	width: 18px;
+	height: 18px;
+	margin-bottom: 2px;
+	margin-right: 4px;
+	margin-left: 2px;
+}
+
+.btn-default {
+	border-color: #f4b038;
+	background: #ffcc5a;
+}
+
+.btn-default:hover, .btn-default:focus {
+	border-color: #f2ac0f;
+	background: #ffc20e;
+}
+
+.btn-default.active.focus, 
+.btn-default.active:focus, 
+.btn-default.active:hover, 
+.btn-default:active.focus, 
+.btn-default:active:focus, 
+.btn-default:active:hover, 
+.open>.dropdown-toggle.btn-default.focus, 
+.open>.dropdown-toggle.btn-default:focus, 
+.open>.dropdown-toggle.btn-default:hover {
+	border-color: #db9312;
+	background: #f4b30f;
+}
+/*
+
+.btn-game:hover{
+	color: red;
+	background: #ffcb05;
+}
+
+.btn-game:active .btn-game:active{
+	color: blue;
+	background: #ffc20e;
+}
+
+.btn-game:focus{
+	color: green;
+	background: #ffc20e;
+}
+*/
 
 #delete_dropzone{
 	width: 70px;
