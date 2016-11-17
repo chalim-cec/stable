@@ -38,9 +38,7 @@ $(window).on("load", function() {
   //click menu object
   $(".menu_object").click(function(event) {
       var src = event.target.getAttribute('src');
-      var img =  $('<img class="draggable game_object">');
-      img.attr('src', src);
-      img.appendTo('#game_objects');
+      createGameObject(src);
   }); 
 
 });   //onload
@@ -162,6 +160,16 @@ function gameSize() {
     $(".menu").removeClass("col-xs-10");
     $(".menu").removeClass("vert-center");
   }
+}
+
+
+/*
+ * creates object in game based on given img src
+ */
+function createGameObject(src){
+    var img =  $('<img class="draggable game_object">');
+    img.attr('src', src);
+    img.appendTo('#playarea_container');
 }
 
 /*
