@@ -205,21 +205,21 @@ function dragMoveListener (event) {
 /*
  * deals with delete dropzone
  */
-interact('#delete-dropzone').dropzone({
+interact('#delete_dropzone').dropzone({
   accept: '.game_object',
   // Require a 50% element overlap for a drop to be possible
   overlap: 0.05,
 
   ondragenter: function (event) {
-    event.target.classList.add('dropzone-active');
+    event.target.children[0].classList.add('dropzone-active');
     event.relatedTarget.classList.add('droppable');
   },
   ondragleave: function (event) {
-    event.target.classList.remove('dropzone-active');
+    event.target.children[0].classList.remove('dropzone-active');
     event.relatedTarget.classList.remove('droppable');
   },
   ondrop: function (event) {
-    event.target.classList.remove('dropzone-active');
+    event.target.children[0].classList.remove('dropzone-active');
     //because IE can't directly remove element
     event.relatedTarget.parentElement.removeChild(event.relatedTarget);
   }
