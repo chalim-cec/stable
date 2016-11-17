@@ -251,3 +251,21 @@ p {
 	width: 40px;
 	height: 40px;
 }
+
+.menu_nav_img{
+	width: 25px;
+	height: 25px;
+	margin: 5px;
+}
+
+#menu_nav.menu-horizontal{
+	right: 10px;
+}
+
+.menu-horizontal .menu_nav_img{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
