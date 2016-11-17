@@ -19,39 +19,44 @@
         <script src="js/vendor/bootstrap.min.js"></script>
     </head>
     <body>
-    <div id="everything">
-        <h1>
-            PAGE TITLE
-        </h1>
-
-        <div id="text">
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In leo orci, tincidunt eu eros eleifend, eleifend mattis leo. Sed bibendum mi quis eros fermentum, at dictum dolor consectetur. Fusce faucibus imperdiet purus. Quisque eget tortor euismod, finibus est quis, commodo sem. Sed lobortis convallis justo, ac scelerisque nisi tincidunt ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p>
-                Sed viverra quam vel semper hendrerit. Fusce ac aliquam libero. Mauris commodo nisl non ipsum efficitur euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi pharetra tortor mi. In vel egestas lacus. In ac ullamcorper diam. Suspendisse posuere justo eu arcu volutpat efficitur. Morbi libero turpis, rutrum ut ex lobortis, vulputate dignissim dui. Pellentesque ac quam tincidunt, bibendum augue vitae, volutpat ante. Fusce ex turpis, accumsan non odio at, ultricies malesuada dui. Vivamus a arcu sit amet diam blandit cursus nec sed nulla. Aenean neque diam, pulvinar dapibus urna eu, placerat dignissim risus. Morbi egestas mi non pellentesque dapibus. Sed ante nisi, bibendum vitae massa a, mattis rutrum lorem. In id ligula id erat suscipit porta.
-            </p>
-
+        <div class="container-fluid">
+            <div class="row">
+                <h1>
+                    Page title
+                </h1>
+            </div>
+            <div id="text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In leo orci, tincidunt eu eros eleifend, eleifend mattis leo. Sed bibendum mi quis eros fermentum, at dictum dolor consectetur. Fusce faucibus imperdiet purus. Quisque eget tortor euismod, finibus est quis, commodo sem. Sed lobortis convallis justo, ac scelerisque nisi tincidunt ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <p>
+                    Sed viverra quam vel semper hendrerit. Fusce ac aliquam libero. Mauris commodo nisl non ipsum efficitur euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi pharetra tortor mi. In vel egestas lacus. In ac ullamcorper diam. Suspendisse posuere justo eu arcu volutpat efficitur. Morbi libero turpis, rutrum ut ex lobortis, vulputate dignissim dui. Pellentesque ac quam tincidunt, bibendum augue vitae, volutpat ante. Fusce ex turpis, accumsan non odio at, ultricies malesuada dui. Vivamus a arcu sit amet diam blandit cursus nec sed nulla. Aenean neque diam, pulvinar dapibus urna eu, placerat dignissim risus. Morbi egestas mi non pellentesque dapibus. Sed ante nisi, bibendum vitae massa a, mattis rutrum lorem. In id ligula id erat suscipit porta.
+                </p>
+            </div>
         </div>
-
-        <div class="centered">
+        <div class="centered container-fluid">
             <div id="game_container" class="row">
 
                 <div id="playarea_container" class="col-xs-10">
-                    <div id="office_container">
+                    <div id="office_container" class="container-fluid">
                         <div id="office_top_padding">
                         </div>
                         <div class="restart_row row">
-                            <button type="button" id="restart_btn" class="btn btn-default">Restart</button>
+                            <button type="button" id="restart_btn" class="btn btn-default btn-md btn-game">
+                                <img src="img/restart.svg"/>
+                                Restart
+                            </button>
                         </div>
                         <div class="save_row row">
-                            <button type="button" id="save_btn" class="btn btn-default">Save</button>
+                            <button type="button" id="save_btn" class="btn btn-default btn-md btn-game">
+                                <img src="img/save.svg"/>
+                                Save
+                            </button>
                         </div>
 
                         <div class="delete_row row">
-                            <div id="delete-dropzone" class="dropzone">
-                                Trash
+                            <div id="delete_dropzone" class="dropzone">
+                                <img src="img/delete.svg" id="delete_img"/>
                             </div>
                         </div>
 
@@ -61,17 +66,19 @@
                     </div>
                 </div>
                 <div id="menu_container" class="col-xs-2">
-                    <div id="rotate_container">
-                        <button type="button" id="rotate_btn" class="btn btn-default">Rotate</button>
-                    </div>
-                    <div div id="menu_nav_container">
-                        <div id="menu_nav">
-                            <a href="#" id="menu_back" aria-label="Previous" class="col-xs-6">
-                                back
-                            </a>
-                            <a href="#" id="menu_next" aria-label="Next"  class="col-xs-6">
-                                next
-                            </a>
+                    <div id="menu_contents" class="vert-center">
+                        <div id="rotate_container">
+                            <img src="img/rotate.svg" id="rotate_btn"/>
+                        </div>
+                        <div id="menu_nav_container">
+                            <div id="menu_nav">
+                                <a href="#" id="menu_back" aria-label="Previous">
+                                    <img src="img/back.svg" class="menu_nav_img"/>
+                                </a>
+                                <a href="#" id="menu_next" aria-label="Next">
+                                    <img src="img/next.svg" class="menu_nav_img"/>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -79,8 +86,7 @@
         </div> 
 
         <h1>
-            PAGE FOOTER
+            Page footer
         </h1>
-    </div>
     </body>
 </html>

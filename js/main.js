@@ -142,6 +142,7 @@ function gameSize() {
     $("#rotate_btn").addClass("vert-center");
     $("#menu_nav_container").addClass("col-xs-1 vert-center_container");
     $("#menu_nav").addClass("vert-center");
+    $("#menu_nav").addClass("menu-horizontal");
     $(".menu").addClass("col-xs-10");
     $(".menu").addClass("vert-center");
 
@@ -157,11 +158,11 @@ function gameSize() {
     $("#rotate_btn").removeClass("vert-center");
     $("#menu_nav_container").removeClass("col-xs-1 vert-center_container");
     $("#menu_nav").removeClass("vert-center");
+    $("#menu_nav").removeClass("menu-horizontal");
     $(".menu").removeClass("col-xs-10");
     $(".menu").removeClass("vert-center");
   }
 }
-
 
 /*
  * target elements with the "draggable" class
@@ -205,21 +206,21 @@ function dragMoveListener (event) {
 /*
  * deals with delete dropzone
  */
-interact('#delete-dropzone').dropzone({
+interact('#delete_dropzone').dropzone({
   accept: '.game_object',
   // Require a 50% element overlap for a drop to be possible
   overlap: 0.05,
 
   ondragenter: function (event) {
-    event.target.classList.add('dropzone-active');
+    event.target.children[0].classList.add('dropzone-active');
     event.relatedTarget.classList.add('droppable');
   },
   ondragleave: function (event) {
-    event.target.classList.remove('dropzone-active');
+    event.target.children[0].classList.remove('dropzone-active');
     event.relatedTarget.classList.remove('droppable');
   },
   ondrop: function (event) {
-    event.target.classList.remove('dropzone-active');
+    event.target.children[0].classList.remove('dropzone-active');
     //because IE can't directly remove element
     event.relatedTarget.parentElement.removeChild(event.relatedTarget);
   }

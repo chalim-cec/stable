@@ -1,4 +1,35 @@
+@font-face {
+    font-family: 'NeueHaasUnicaPro';
+    src: url('../fonts/NeueHaasUnicaPro-Regular.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'NeueHaasUnicaPro';
+    src: url('../fonts/NeueHaasUnicaPro-Bold.otf');
+    font-weight: bold;
+}
+
+h1{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:2em;
+	font-weight: normal;
+	color: #004153;
+    line-height: 1.1em;
+    
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:0.85em;
+    font-weight: normal;
+    color:rgba(0,0,0,0.54);
+    line-height: 1.45em;
+}
+
+
 .centered{
+
     text-align: center;
 }
 
@@ -21,15 +52,15 @@
 
 #menu_container{
 	height: 500px;
-	background-color: #e0e0e0;
+	background-color: #f0f0f0;
 	display:inline-block;
 	float: right;
-	padding: 0px 5px 0px 5px;
+	padding: 8px 5px;
 }
 
 #playarea_container{
 	height: 500px;
-	background-color: #cccccc;
+	background-color: #93b26f;
 	display:inline-block;
 	float: right;
     display: flex;
@@ -131,32 +162,78 @@
 .restart_row{
 	position: absolute;
 	top: 20px;
+	left: 40px;
 }
 
 .save_row{ 
 	position: absolute;
 	top: 60px;
+	left: 40px;
 }
 
 
 .delete_row{
 	position: absolute;
 	bottom: 20px;
+	right: 40px;
 }
 
-#delete_btn{
-	z-index: -2;
+.btn-game {
+	font-family: NeueHaasUnicaPro;
+	font-weight: bold;
+	color: #FFF 	!important;
+	width: 90px;
+	padding: 4px 6px;
+	text-align: left;
 }
 
-#delete-dropzone{
-	background-color: #FF0000;
-	width: 60px;
-	height: 60px;
+.btn-game img {
+	width: 18px;
+	height: 18px;
+	margin-bottom: 2px;
+	margin-right: 4px;
+	margin-left: 2px;
 }
 
-#delete-dropzone.dropzone-active {
-  border-color: #fff;
-  border-style: solid;
+.btn-default {
+	border-color: #f4b038;
+	background: #ffcc5a;
+}
+
+.btn-default:hover, .btn-default:focus {
+	border-color: #f2ac0f;
+	background: #ffc20e;
+}
+
+.btn-default.active.focus, 
+.btn-default.active:focus, 
+.btn-default.active:hover, 
+.btn-default:active.focus, 
+.btn-default:active:focus, 
+.btn-default:active:hover, 
+.open>.dropdown-toggle.btn-default.focus, 
+.open>.dropdown-toggle.btn-default:focus, 
+.open>.dropdown-toggle.btn-default:hover {
+	border-color: #db9312;
+	background: #f4b30f;
+}
+
+#delete_dropzone{
+	width: 70px;
+	height: 70px;
+}
+
+#delete_img{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	opacity: 0.7;
+	width: 50px;
+	height: 50px;
+}
+
+#delete_img.dropzone-active {
+	opacity: 1;
 }
 
 .game_object.droppable{
@@ -167,4 +244,28 @@
 .draggable{
 	-ms-touch-action: none;
 	touch-action: none;
+}
+
+#rotate_btn{
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+}
+
+.menu_nav_img{
+	width: 25px;
+	height: 25px;
+	margin: 5px;
+}
+
+#menu_nav.menu-horizontal{
+	right: 10px;
+}
+
+.menu-horizontal .menu_nav_img{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
