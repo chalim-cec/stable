@@ -21,7 +21,8 @@ $(window).on("load", function() {
   });
 
   //save screenshot
-  $("#save_btn").click(function() { 
+  $("#save_btn").click(function() {
+    $("#save_btn").blur(); 
     saveScreenshot();
   });
 
