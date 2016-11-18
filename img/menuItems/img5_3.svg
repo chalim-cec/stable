@@ -1,1 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffc0d4;}.cls-2{font-size:26px;}.cls-2,.cls-4{font-family:MyriadPro-Regular, Myriad Pro;}.cls-3{letter-spacing:0.01em;}.cls-4{font-size:22px;letter-spacing:-0.01em;}.cls-5{letter-spacing:0em;}</style></defs><title>Artboard 6</title><g id="bg"><rect class="cls-1" x="-653.47" y="-29.82" width="900.59" height="256.94"/><path d="M246.62-29.32V226.62H-653V-29.32H246.62m1-1H-654V227.62H247.62V-30.32Z"/></g><g id="img_labels" data-name="img labels"><text class="cls-2" transform="translate(19.59 43.49)"><tspan class="cls-3">I</tspan><tspan x="6.47" y="0">mg05</tspan></text></g><g id="rot3"><text class="cls-4" transform="translate(32.74 77.07)">r<tspan class="cls-5" x="6.97" y="0">ot3</tspan></text></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#949897;}
+	.st1{fill:#C3C2C2;}
+	.st2{fill:#B2B2B2;}
+	.st3{fill:#C6C4C3;}
+	.st4{fill:#D1D2D3;}
+</style>
+<path id="XMLID_2097_" class="st0" d="M24.2,18.2c0-0.2,0.1-0.4,0.3-0.4c0.1-0.1,0.8-0.4,0.9-0.4c0.1,0,0.3,0,0.4,0l27.7,16
+	c0.4,0.2,0.7,0.7,0.7,1.1v26.3l-0.8,0.5L33.4,49.1l-9.2-5.3V18.2z"/>
+<g id="XMLID_2087_">
+	<path id="XMLID_2096_" class="st1" d="M24.9,17.8l27.7,16c0.4,0.2,0.7,0.7,0.7,1.1v25.7L24.2,43.8V18.2
+		C24.2,17.8,24.6,17.6,24.9,17.8z"/>
+</g>
+<g id="XMLID_2074_">
+	<g id="XMLID_2077_">
+		<polygon id="XMLID_2078_" class="st2" points="52.9,60.2 52.9,61.4 53.2,61.2 53.2,60 		"/>
+	</g>
+	<polygon id="XMLID_2076_" class="st3" points="23.8,43.5 52.9,60.2 52.9,61.4 23.8,44.6 	"/>
+	<polygon id="XMLID_2075_" class="st4" points="24.2,43.3 53.2,60 52.9,60.2 23.8,43.5 	"/>
+</g>
+</svg>
