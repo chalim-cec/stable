@@ -1,1 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#acefe7;}.cls-2{font-size:26px;}.cls-2,.cls-3{font-family:MyriadPro-Regular, Myriad Pro;}.cls-3{font-size:22px;letter-spacing:-0.01em;}.cls-4{letter-spacing:0em;}</style></defs><title>Artboard 24</title><g id="bg"><rect class="cls-1" x="-293.47" y="-128.47" width="900.59" height="238.44"/><path d="M606.62-128V109.48H-293V-128H606.62m1-1H-294V110.48H607.62V-129Z"/></g><g id="img_labels" data-name="img labels"><text class="cls-2" transform="translate(14.94 32.83)">img23</text></g><g id="rot0"><text class="cls-3" transform="translate(28.34 81.79)">r<tspan class="cls-4" x="6.97" y="0">ot0</tspan></text></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#19191C;}
+	.st1{fill:#48484A;}
+	.st2{fill:#414143;}
+	.st3{fill:#353538;}
+	.st4{opacity:0.2;fill:#353538;}
+	.st5{fill:#A4A3A3;}
+	.st6{fill:#D0D1D2;}
+	.st7{opacity:0.6;fill:#569DC0;}
+	.st8{opacity:0.2;fill:#569DC0;}
+</style>
+<g id="Layer_1">
+</g>
+<g id="Layer_2">
+	<g>
+		<g>
+			<g>
+				<g>
+					<g>
+						<g>
+							<polygon class="st0" points="24.4,16.4 28.2,18.6 28.2,79.2 24.4,77 							"/>
+							<polyline class="st0" points="24.4,16.4 28.2,18.6 28.2,79.2 							"/>
+							<polygon class="st1" points="51.8,0.6 55.6,2.8 28.2,18.6 24.4,16.4 							"/>
+							<polyline class="st2" points="55.6,2.8 28.2,18.6 24.4,16.4 							"/>
+						</g>
+					</g>
+				</g>
+			</g>
+			<g>
+				<path class="st3" d="M28.2,18.6v60.6l27.4-15.8V2.8L28.2,18.6z M29.9,24.1l20.2-11.6v23.9L29.9,48L29.9,24.1z"/>
+			</g>
+			<g>
+				<path class="st4" d="M28.2,18.6v60.6l27.4-41.5V2.8L28.2,18.6z M29.9,24.1l20.2-11.6v23.9L29.9,48L29.9,24.1z"/>
+			</g>
+			<g>
+				<polygon class="st0" points="50.1,12.4 53.8,10.3 53.8,38.5 50.1,36.3 				"/>
+				<g>
+					<g>
+						<g>
+							<polygon class="st5" points="44.4,15.7 44.4,26.8 42.2,25.1 42.2,17 							"/>
+						</g>
+						<polygon class="st6" points="46.4,20.2 50.6,17.7 52.9,19 46.4,22.8 						"/>
+						<polygon class="st3" points="52.9,19 52.9,21.9 46.4,25.6 46.4,22.8 						"/>
+					</g>
+					<polygon class="st7" points="47,22.4 52.9,19 52.9,10.8 47,14.2 					"/>
+				</g>
+				<g>
+					<polygon class="st2" points="53.8,38.5 29.9,52.3 29.9,47.9 50.1,36.3 					"/>
+					<polygon class="st7" points="29.9,51.3 52.9,37.9 52.9,21.9 29.9,35.1 					"/>
+					<polyline class="st8" points="52.9,21.9 29.9,35.1 29.9,51.3 					"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<polygon class="st3" points="44.4,15.7 44.4,26.8 47,25.3 47,14.2 			"/>
+		</g>
+		<g>
+			<g>
+				<polygon class="st5" points="35.9,20.6 35.9,31.6 33.7,30 33.7,21.9 				"/>
+			</g>
+			<polygon class="st6" points="37.9,25.1 42.2,22.6 44.4,23.9 37.9,27.7 			"/>
+			<polygon class="st3" points="44.4,23.9 44.4,26.8 37.9,30.5 37.9,27.7 			"/>
+		</g>
+		<g>
+			<polygon class="st3" points="35.9,20.6 35.9,31.6 38.5,30.2 38.5,19.1 			"/>
+		</g>
+		<g>
+			<polygon class="st6" points="29.9,29.7 33.7,27.5 35.9,28.8 29.9,32.3 			"/>
+			<polygon class="st3" points="35.9,28.8 35.9,31.6 29.4,35.4 29.4,32.6 			"/>
+		</g>
+		<polygon class="st7" points="38.5,27.3 44.4,23.9 44.4,15.7 38.5,19.1 		"/>
+		<polygon class="st7" points="29.9,32.3 35.9,28.8 35.9,20.6 29.9,24.1 		"/>
+	</g>
+</g>
+</svg>

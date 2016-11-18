@@ -1,1 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#acefe7;}.cls-2{font-size:26px;}.cls-2,.cls-4{font-family:MyriadPro-Regular, Myriad Pro;}.cls-3{letter-spacing:0.01em;}.cls-4{font-size:22px;letter-spacing:-0.01em;}.cls-5{letter-spacing:0em;}</style></defs><title>Artboard 20</title><g id="bg"><rect class="cls-1" x="-653.47" y="-8.47" width="900.59" height="238.44"/><path d="M246.62-8V229.48H-653V-8H246.62m1-1H-654V230.48H247.62V-9Z"/></g><g id="img_labels" data-name="img labels"><text class="cls-2" transform="translate(19.48 38.84)"><tspan class="cls-3">I</tspan><tspan x="6.47" y="0">mg19</tspan></text></g><g id="rot0"><text class="cls-4" transform="translate(21.2 74.73)">r<tspan class="cls-5" x="6.97" y="0">ot0</tspan></text></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#525354;}
+	.st1{fill:#59595C;}
+	.st2{fill:#434445;}
+	.st3{fill:#39393A;}
+	.st4{opacity:0.2;fill:#434445;}
+	.st5{fill:#4E4D50;}
+	.st6{fill:#424245;}
+	.st7{fill:#323233;}
+	.st8{fill:#565759;}
+	.st9{fill:#14151B;}
+	.st10{fill:#242530;}
+	.st11{fill:#5D5E61;}
+	.st12{fill:#9D9FA2;}
+	.st13{fill:#B1B4B6;}
+	.st14{fill:#454548;}
+</style>
+<g id="XMLID_45727_">
+	<g id="XMLID_45743_">
+		<g id="XMLID_45744_">
+			<polygon id="XMLID_45748_" class="st0" points="38.5,61.2 38.5,61.7 48.7,55.8 48.7,55.3 			"/>
+			<polygon id="XMLID_45747_" class="st1" points="33.4,58.3 38.5,61.2 38.5,61.7 33.4,58.7 			"/>
+			<polygon id="XMLID_45746_" class="st2" points="43.6,52.4 33.4,58.3 38.5,61.2 48.7,55.3 			"/>
+			<path id="XMLID_45745_" class="st3" d="M43.6,52.4l-10.2,5.9c0,0,3.5,0.3,7.3-0.2c3.6-0.5,8-2.7,8-2.7L43.6,52.4z"/>
+			<polygon class="st4" points="38.1,61 38.5,61.2 43.2,58.5 43.2,54.8 39.3,54.8 38.1,55.5 			"/>
+		</g>
+	</g>
+	<g id="XMLID_45739_">
+		<polygon id="XMLID_45742_" class="st5" points="43.2,52.3 43.2,55.4 38.6,58 38.6,55 		"/>
+		<polygon id="XMLID_45723_" class="st6" points="43.2,50.5 43.2,53.5 38.6,56.2 38.6,53.1 		"/>
+		<polygon id="XMLID_45741_" class="st7" points="38.1,54.7 38.6,55 38.6,58 38.1,57.7 		"/>
+		<polygon id="XMLID_45740_" class="st8" points="42.7,52 43.2,52.3 38.6,55 38.1,54.7 		"/>
+	</g>
+	<g id="XMLID_45729_">
+		<polygon id="XMLID_45738_" class="st3" points="59.3,15.5 59.3,42.1 21.5,64 21.5,37.3 		"/>
+		<polyline id="XMLID_46205_" class="st7" points="21.5,64 21.5,37.3 59.3,15.5 		"/>
+		<polygon id="XMLID_45737_" class="st9" points="55.3,20.7 55.3,41.6 25.5,58.8 25.5,37.8 		"/>
+		<polygon id="XMLID_45736_" class="st10" points="55.3,20.7 55.3,41.6 25.5,58.8 		"/>
+		<polygon id="XMLID_45735_" class="st11" points="20.7,36.8 21.5,37.3 21.5,64 20.7,63.5 		"/>
+		<polygon id="XMLID_45734_" class="st5" points="59.3,42.6 59.3,43.2 21.5,65 21.5,64.5 		"/>
+		<polygon id="XMLID_45733_" class="st11" points="20.7,64 21.5,64.5 21.5,65 20.7,64.5 		"/>
+		<polygon id="XMLID_45732_" class="st12" points="59.3,42.1 59.3,42.6 21.5,64.5 21.5,64 		"/>
+		<polygon id="XMLID_45731_" class="st13" points="20.7,63.5 21.5,64 21.5,64.5 20.7,64 		"/>
+		<polygon id="XMLID_45730_" class="st8" points="58.5,15 59.3,15.5 21.5,37.3 20.7,36.8 		"/>
+	</g>
+	<polygon id="XMLID_45728_" class="st14" points="55.3,20.6 55.3,20.7 25.5,37.8 25.5,38 55.1,20.9 55.1,41.7 55.3,41.6 55.3,20.7 	
+		"/>
+</g>
+</svg>

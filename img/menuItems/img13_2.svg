@@ -1,1 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffc0d4;}.cls-2{font-size:26px;}.cls-2,.cls-3{font-family:MyriadPro-Regular, Myriad Pro;}.cls-3{font-size:22px;letter-spacing:-0.01em;}.cls-4{letter-spacing:0em;}</style></defs><title>Artboard 14</title><g id="bg"><rect class="cls-1" x="-773.47" y="-149.82" width="900.59" height="256.94"/><path d="M126.62-149.32V106.62H-773V-149.32H126.62m1-1H-774V107.62H127.62V-150.32Z"/></g><g id="img_labels" data-name="img labels"><text class="cls-2" transform="translate(18.52 38.27)">img13</text></g><g id="rot2"><text class="cls-3" transform="translate(32.01 84.13)">r<tspan class="cls-4" x="6.97" y="0">ot2</tspan></text></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#301F12;}
+	.st1{fill:#563E2E;}
+	.st2{fill:#008895;}
+	.st3{fill:#01B4B3;}
+	.st4{opacity:0.2;}
+	.st5{fill:#056378;}
+	.st6{opacity:0.2;fill:#056378;}
+	.st7{fill:#CAE9F0;}
+	.st8{fill:#96B9BE;}
+	.st9{fill:#49C1C2;}
+	.st10{fill:#12A1A4;}
+</style>
+<g id="XMLID_38603_">
+	<g id="XMLID_38636_">
+		<polygon id="XMLID_38638_" class="st0" points="65.1,46.4 68.4,44.4 68.4,42.6 65.1,44.5 		"/>
+		<polygon id="XMLID_38637_" class="st1" points="65.1,44.5 61.7,42.6 61.7,44.4 65.1,46.4 		"/>
+	</g>
+	<g id="XMLID_38633_">
+		<polygon id="XMLID_38635_" class="st0" points="14.9,55.1 18.3,53.2 18.3,51.3 14.9,53.3 		"/>
+		<polygon id="XMLID_38634_" class="st1" points="14.9,53.3 11.6,51.3 11.6,53.2 14.9,55.1 		"/>
+	</g>
+	<g id="XMLID_38630_">
+		<polygon id="XMLID_38632_" class="st0" points="32.4,65.2 35.8,63.3 35.8,61.4 32.4,63.4 		"/>
+		<polygon id="XMLID_38631_" class="st1" points="32.4,63.4 29.1,61.4 29.1,63.3 32.4,65.2 		"/>
+	</g>
+	<g id="XMLID_38604_">
+		<g id="XMLID_38611_">
+			<polygon id="XMLID_38629_" class="st2" points="41.2,18.5 41.2,26.9 62,39 62,30.5 			"/>
+			<g id="XMLID_38627_">
+				<polygon id="XMLID_38628_" class="st3" points="57.1,32.7 40.7,23.2 18.1,36.2 34.5,45.7 				"/>
+			</g>
+			<g id="XMLID_42102_" class="st4">
+				<polyline id="XMLID_42107_" class="st5" points="18.1,36.2 34.5,45.7 57.1,32.7 				"/>
+			</g>
+			<polygon class="st6" points="41,42 57.1,32.7 41,23.3 			"/>
+			<g id="XMLID_38624_">
+				<path id="XMLID_38626_" class="st7" d="M27.3,46.8c0.5,0.4,1.9-2.9,2.6-7c0.2-1.3,0.9-2.9,1-4.4c0.1-1.6-1-3.3-1-3.3
+					c-0.1-0.1-0.5-0.1-0.6,0.3c0,0-0.5,4.8-1.1,7.9C27.7,43.4,27.2,46.7,27.3,46.8z"/>
+				<path id="XMLID_38625_" class="st8" d="M41.1,47.9c0,0.3-0.3,0.5-0.6,0.4c-1.1-0.2-4.9-1-6.5-0.9c-2.5,0-5.2-0.3-6.3-0.2
+					c-0.3,0-0.5-0.2-0.5-0.4c0-1.4,1.8-3.6,2.3-6.9c0.2-1.2,0.1-3.6,0.1-4.6c0.1-1.5-0.2-2.2-0.3-2.9c0-0.2,0.2-0.4,0.4-0.3
+					c1.1,0.7,3.7,1.8,5.5,2.3c1.1,0.3,3.1,0.5,3.6,0.5c1.2,0.1,2.1,0.6,2.6,1.2c0.3,0.3,0.1,1.2,0.1,1.4c-0.3,0.8-0.7,2.4-0.9,5
+					C40.8,45,41.2,47,41.1,47.9z"/>
+			</g>
+			<polygon id="XMLID_38623_" class="st9" points="47.6,14.8 41.2,18.5 62,30.5 68.4,26.8 			"/>
+			<polyline id="XMLID_42104_" class="st3" points="41.2,18.5 62,30.5 68.4,26.8 			"/>
+			<polygon id="XMLID_38622_" class="st5" points="68.4,40.7 68.4,26.8 62,30.5 62,44.4 			"/>
+			<g id="XMLID_38618_">
+				<polygon id="XMLID_38621_" class="st9" points="62,24.2 58.4,22.1 35.2,35.5 38.8,37.6 				"/>
+				<polyline id="XMLID_42105_" class="st3" points="35.2,35.5 38.8,37.6 62,24.2 				"/>
+				<polygon id="XMLID_38620_" class="st2" points="38.8,48.6 33.8,45.8 35.2,35.5 38.8,37.6 				"/>
+				<polygon id="XMLID_38619_" class="st5" points="62,24.2 38.8,37.6 38.8,48.6 62,35.2 				"/>
+				<polyline id="XMLID_42101_" class="st6" points="62,24.2 38.8,37.6 38.8,48.6 				"/>
+			</g>
+			<g id="XMLID_38616_">
+				<polygon id="XMLID_38617_" class="st5" points="62,35.2 38.8,48.6 38.8,57.8 62,44.4 				"/>
+			</g>
+			<g id="XMLID_38614_">
+				<polygon id="XMLID_38615_" class="st0" points="68.4,40.7 32.4,61.5 32.4,63.4 68.4,42.6 				"/>
+			</g>
+			<g id="XMLID_38612_">
+				<polygon id="XMLID_38613_" class="st1" points="11.6,49.5 32.4,61.5 32.4,63.4 11.6,51.3 				"/>
+			</g>
+		</g>
+		<g id="XMLID_38608_">
+			<g id="XMLID_38609_">
+				<polygon id="XMLID_38610_" class="st10" points="34.5,49.9 20.1,41.6 20.1,37.4 34.5,45.7 				"/>
+			</g>
+		</g>
+		<polygon id="XMLID_38607_" class="st2" points="32.4,47.6 11.6,35.6 11.6,49.5 32.4,61.5 		"/>
+		<polygon id="XMLID_38606_" class="st9" points="18,31.9 11.6,35.6 32.4,47.6 38.8,43.9 		"/>
+		<polyline id="XMLID_42103_" class="st3" points="11.6,35.6 32.4,47.6 38.8,43.9 		"/>
+		<polygon id="XMLID_38605_" class="st5" points="38.8,57.8 38.8,43.9 32.4,47.6 32.4,61.5 		"/>
+		<polygon id="XMLID_42096_" class="st6" points="38.8,57.8 38.8,43.9 32.4,47.6 32.4,61.5 		"/>
+	</g>
+</g>
+</svg>

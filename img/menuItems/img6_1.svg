@@ -1,1 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#ffc0d4;}.cls-2{font-size:26px;}.cls-2,.cls-3{font-family:MyriadPro-Regular, Myriad Pro;}.cls-3{font-size:22px;letter-spacing:-0.01em;}.cls-4{letter-spacing:0em;}</style></defs><title>Artboard 7</title><g id="bg"><rect class="cls-1" x="-773.47" y="-29.82" width="900.59" height="256.94"/><path d="M126.62-29.32V226.62H-773V-29.32H126.62m1-1H-774V227.62H127.62V-30.32Z"/></g><g id="img_labels" data-name="img labels"><text class="cls-2" transform="translate(18.73 41.9)">img06</text></g><g id="rot1"><text class="cls-3" transform="translate(34.79 77.06)">r<tspan class="cls-4" x="6.97" y="0">ot1</tspan></text></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#351C0A;}
+	.st1{fill:#563112;}
+	.st2{fill:#2B1507;}
+	.st3{fill:#774D1E;}
+	.st4{fill:#6B4118;}
+</style>
+<g id="XMLID_22486_">
+	<g id="XMLID_22857_">
+		<polygon id="XMLID_23303_" class="st0" points="33.8,48.6 34.8,49.2 34.8,68 33.8,67.4 		"/>
+		<polygon id="XMLID_23302_" class="st1" points="35.8,48.6 34.8,49.2 34.8,68 35.8,67.4 		"/>
+	</g>
+	<g id="XMLID_22509_">
+		<polygon id="XMLID_22856_" class="st0" points="9.5,34.6 10.5,35.2 10.5,54 9.5,53.4 		"/>
+		<polygon id="XMLID_22855_" class="st1" points="11.6,34.6 10.5,35.2 10.5,54 11.6,53.4 		"/>
+	</g>
+	<g id="XMLID_22499_">
+		<polygon id="XMLID_22508_" class="st0" points="68.4,28.6 69.5,29.2 69.5,47.9 68.4,47.3 		"/>
+		<polygon id="XMLID_22507_" class="st1" points="70.5,28.6 69.5,29.2 69.5,47.9 70.5,47.3 		"/>
+	</g>
+	<g id="XMLID_22487_">
+		<polygon id="XMLID_22498_" class="st1" points="9.5,32.7 45.2,12 70.5,26.6 70.5,28.6 34.8,49.2 9.5,34.6 		"/>
+		<polygon id="XMLID_22497_" class="st0" points="9.5,32.7 34.8,47.3 34.8,49.2 9.5,34.6 		"/>
+		<polyline id="XMLID_39297_" class="st2" points="9.5,32.7 34.8,47.3 34.8,49.2 		"/>
+		<polygon id="XMLID_22488_" class="st3" points="45.2,12 9.5,32.7 34.8,47.3 70.5,26.6 		"/>
+		<polyline id="XMLID_39296_" class="st4" points="9.5,32.7 34.8,47.3 70.5,26.6 		"/>
+	</g>
+</g>
+</svg>
